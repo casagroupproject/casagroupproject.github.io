@@ -4,4 +4,4 @@ this is where we'll have to put our website content (the html, js and so on). I 
 https://casagroupproject.github.io/template1/index.html </br>
 https://casagroupproject.github.io/template2/index.html
 
-We can later exchange the domain name through another name that doesn't include github
+What's now text is where James and Anthonys content will go. We can later exchange the domain name through another name that doesn't include github
