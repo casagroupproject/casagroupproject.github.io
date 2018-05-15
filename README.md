@@ -1,11 +1,12 @@
 # casagroupproject.github.io
-this is where we'll have to put our website content (the html, css, js and so on). 
+;) Heyyyyyyy
 
+This is where we'll have to put our website content (the html, css, js and so on). 
 
-Please do not change the content in the 'index.html' (homepage), and name your subpage indexX(X is the subpage number),
-Two tempates sub-pages are below:
+The 'index.html' file is our homepage, you can name your subpage html file as indexX(X is the subpage number),
+Two tempates sub-pages are below, you can also access them in the city link of london and newyork in the homepage (just for testing):</br>
 https://casagroupproject.github.io/template1/index1.html </br>
 https://casagroupproject.github.io/template2/index2.html
 
-You can put your css stuff under the css folder and javascript under the js folder
-
+You can put your css stuff under the css folder and javascript under the js folder </br>
+Please do not change the content in 'build','include' and 'src' folder 
