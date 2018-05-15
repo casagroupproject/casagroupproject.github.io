@@ -1,7 +1,11 @@
 # casagroupproject.github.io
-this is where we'll have to put our website content (the html, js and so on). I created two tempates already, you can look at them under:
+this is where we'll have to put our website content (the html, css, js and so on). 
 
-https://casagroupproject.github.io/template1/index.html </br>
-https://casagroupproject.github.io/template2/index.html
 
-What's now text is where James and Anthonys content will go. We can later exchange the domain name through another name that doesn't include github
+Please do not change the content in the 'index.html' (homepage), and name your subpage indexX(X is the subpage number),
+Two tempates sub-pages are below:
+https://casagroupproject.github.io/template1/index1.html </br>
+https://casagroupproject.github.io/template2/index2.html
+
+You can put your css stuff under the css folder and javascript under the js folder
+
