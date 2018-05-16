@@ -10237,7 +10237,7 @@ THREE.EventDispatcher.prototype = {
 	//
 
 	THREE.Raycaster.prototype.precision = 0.0001;
-	THREE.Raycaster.prototype.linePrecision = 1;
+	THREE.Raycaster.prototype.linePrecision = 100;
 
 	THREE.Raycaster.prototype.set = function ( origin, direction ) {
 
@@ -11128,7 +11128,7 @@ THREE.Projector = function () {
 
 	var renderList = new RenderList();
 
-	this.projectScene = function ( scene, camera, sortObjects, sortElements ) {
+	this.projectScene = function (scene, camera, sortObjects, sortElements ) {
 
 		var object, geometry, vertices, faces, face, faceVertexNormals, faceVertexUvs, uvs,
 		isFaceMaterial, objectMaterials;
@@ -17916,14 +17916,12 @@ THREE.ParticleSystem.prototype.clone = function ( object ) {
  */
 
 THREE.Line = function ( geometry, material, type ) {
-
 	THREE.Object3D.call( this );
 
 	this.geometry = geometry !== undefined ? geometry : new THREE.Geometry();
 	this.material = material !== undefined ? material : new THREE.LineBasicMaterial( { color: Math.random() * 0xffffff } );
 
 	this.type = ( type !== undefined ) ? type : THREE.LineStrip;
-
 };
 
 THREE.LineStrip = 0;
@@ -18883,7 +18881,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 		alpha: parameters.alpha === true
 	} ),
 
-	_clearColor = new THREE.Color( 0x000000 ),
+	_clearColor = new THREE.Color(0x000000),
 	_clearAlpha = 0,
 
 	_contextGlobalAlpha = 1,
@@ -19002,59 +19000,52 @@ THREE.CanvasRenderer = function ( parameters ) {
 
 	// WebGLRenderer compatibility
 
-	this.supportsVertexTextures = function () {};
-	this.setFaceCulling = function () {};
+	// this.supportsVertexTextures = function () {};
+	// this.setFaceCulling = function () {};
 
-	this.setSize = function ( width, height, updateStyle ) {
+	// this.setSize = function ( width, height, updateStyle ) {
 
-		_canvasWidth = width * this.devicePixelRatio;
-		_canvasHeight = height * this.devicePixelRatio;
+	// 	_canvasWidth = width * this.devicePixelRatio;
+	// 	_canvasHeight = height * this.devicePixelRatio;
 
-		_canvasWidthHalf = Math.floor( _canvasWidth / 2 );
-		_canvasHeightHalf = Math.floor( _canvasHeight / 2 );
+	// 	_canvasWidthHalf = Math.floor( _canvasWidth / 2 );
+	// 	_canvasHeightHalf = Math.floor( _canvasHeight / 2 );
 
-		_canvas.width = _canvasWidth;
-		_canvas.height = _canvasHeight;
+	// 	_canvas.width = _canvasWidth;
+	// 	_canvas.height = _canvasHeight;
 
-		if ( this.devicePixelRatio !== 1 && updateStyle !== false ) {
+	// 	if ( this.devicePixelRatio !== 1 && updateStyle !== false ) {
 
-			_canvas.style.width = width + 'px';
-			_canvas.style.height = height + 'px';
+	// 		_canvas.style.width = width + 'px';
+	// 		_canvas.style.height = height + 'px';
 
-		}
+	// 	}
 
-		_clipBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf ),
-		_clipBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
+	// 	_clipBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf ),
+	// 	_clipBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
 
-		_clearBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf );
-		_clearBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
+	// 	_clearBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf );
+	// 	_clearBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
 
-		_contextGlobalAlpha = 1;
-		_contextGlobalCompositeOperation = 0;
-		_contextStrokeStyle = null;
-		_contextFillStyle = null;
-		_contextLineWidth = null;
-		_contextLineCap = null;
-		_contextLineJoin = null;
+	// 	_contextGlobalAlpha = 1;
+	// 	_contextGlobalCompositeOperation = 0;
+	// 	_contextStrokeStyle = null;
+	// 	_contextFillStyle = null;
+	// 	_contextLineWidth = null;
+	// 	_contextLineCap = null;
+	// 	_contextLineJoin = null;
 
-	};
+	// };
 
-	this.setClearColor = function (color, alpha ) {
+	// this.setClearColor = function (color, alpha ) {
 
-		_clearColor.set( color );
-		_clearAlpha = alpha !== undefined ? alpha : 1;
+	// 	_clearColor.set( color );
+	// 	_clearAlpha = alpha !== undefined ? alpha : 1;
 
-		_clearBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf );
-		_clearBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
+	// 	_clearBox.min.set( - _canvasWidthHalf, - _canvasHeightHalf );
+	// 	_clearBox.max.set(   _canvasWidthHalf,   _canvasHeightHalf );
 
-	};
-
-	this.setClearColorHex = function ( hex, alpha ) {
-
-		console.warn( 'DEPRECATED: .setClearColorHex() is being removed. Use .setClearColor() instead.' );
-		this.setClearColor( hex, alpha );
-
-	};
+	// };
 
 	this.getMaxAnisotropy = function () {
 
@@ -19085,9 +19076,9 @@ THREE.CanvasRenderer = function ( parameters ) {
 			if ( _clearAlpha > 0 ) {
 
 				setBlending( THREE.NormalBlending );
-				setOpacity( 1 );
+				setOpacity( 100);
 
-				setFillStyle( 'rgba(' + Math.floor( _clearColor.r * 255 ) + ',' + Math.floor( _clearColor.g * 255 ) + ',' + Math.floor( _clearColor.b * 255 ) + ',' + _clearAlpha + ')' );
+				setFillStyle( 'rgba(' + Math.floor( _clearColor.r * 100 ) + ',' + Math.floor( _clearColor.g * 100 ) + ',' + Math.floor( _clearColor.b * 255 ) + ',' + _clearAlpha + ')' );
 
 				_context.fillRect(
 					_clearBox.min.x | 0,
@@ -19133,10 +19124,10 @@ THREE.CanvasRenderer = function ( parameters ) {
 
 		_normalViewMatrix.getNormalMatrix( camera.matrixWorldInverse );
 
-		/* DEBUG
-		setFillStyle( 'rgba( 0, 255, 255, 0.5 )' );
-		_context.fillRect( _clipBox.min.x, _clipBox.min.y, _clipBox.max.x - _clipBox.min.x, _clipBox.max.y - _clipBox.min.y );
-		*/
+		
+		// setFillStyle( 'rgba( 0, 255, 255, 0.5 )' );
+		// _context.fillRect( _clipBox.min.x, _clipBox.min.y, _clipBox.max.x - _clipBox.min.x, _clipBox.max.y - _clipBox.min.y );
+		
 
 		calculateLights();
 
@@ -19735,7 +19726,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 
 		} else {
 
-			setFillStyle( 'rgba(0,0,0,1)' );
+			setFillStyle( 'rgba(255,0,0,255)' );
 			_context.fill();
 
 			return;
@@ -23068,8 +23059,9 @@ THREE.WebGLRenderer = function ( parameters ) {
 	_stencil = parameters.stencil !== undefined ? parameters.stencil : true,
 	_preserveDrawingBuffer = parameters.preserveDrawingBuffer !== undefined ? parameters.preserveDrawingBuffer : false,
 
-	_clearColor = new THREE.Color( 0x000000 ),
-	_clearAlpha = 0;
+//this can be used to change background color
+	_clearColor = new THREE.Color(0x000000),
+	_clearAlpha = 1;
 
 	// public properties
 
@@ -23393,12 +23385,7 @@ THREE.WebGLRenderer = function ( parameters ) {
 
 	};
 
-	this.setClearColorHex = function ( hex, alpha ) {
 
-		console.warn( 'DEPRECATED: .setClearColorHex() is being removed. Use .setClearColor() instead.' );
-		this.setClearColor( hex, alpha );
-
-	};
 
 	this.getClearColor = function () {
 
@@ -23459,7 +23446,6 @@ THREE.WebGLRenderer = function ( parameters ) {
 	};
 
 	this.addPrePlugin = function ( plugin ) {
-
 		plugin.init( this );
 		this.renderPluginsPre.push( plugin );
 
@@ -39564,10 +39550,10 @@ THREE.ShadowMapPlugin = function () {
 		// restore GL state
 
 		var clearColor = _renderer.getClearColor(),
-		clearAlpha = _renderer.getClearAlpha();
+		    clearAlpha = _renderer.getClearAlpha();
 
-		_gl.clearColor( clearColor.r, clearColor.g, clearColor.b, clearAlpha );
-		_gl.enable( _gl.BLEND );
+		 _gl.clearColor( clearColor.r, clearColor.g, clearColor.b, clearAlpha );
+		// _gl.enable( _gl.BLEND );
 
 		if ( _renderer.shadowMapCullFace === THREE.CullFaceFront ) {
 
@@ -39577,7 +39563,7 @@ THREE.ShadowMapPlugin = function () {
 
 	};
 
-	function createVirtualLight( light, cascade ) {
+	function createVirtualLight(light, cascade ) {
 
 		var virtualLight = new THREE.DirectionalLight();
 
