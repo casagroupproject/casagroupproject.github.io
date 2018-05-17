@@ -1,3 +1,4 @@
+
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 window.ENCOM = (window.ENCOM || {});
 window.ENCOM.Globe = require('./src/Globe.js');
@@ -13289,6 +13290,7 @@ THREE.OrthographicCamera.prototype.updateProjectionMatrix = function () {
 THREE.OrthographicCamera.prototype.clone = function () {
 
 	var camera = new THREE.OrthographicCamera();
+    // var controls;
 
 	THREE.Camera.prototype.clone.call( this, camera );
 
@@ -39253,6 +39255,11 @@ THREE.ShadowMapPlugin = function () {
 	this.render = function ( scene, camera ) {
 
 		if ( ! ( _renderer.shadowMapEnabled && _renderer.shadowMapAutoUpdate ) ) return;
+                
+
+        controls.update();
+
+
 
 		this.update( scene, camera );
 
@@ -42022,11 +42029,25 @@ function Globe(width, height, opts){
 
 /* public globe functions */
 
+
+
 Globe.prototype.init = function(cb){
 
     // create the camera
     this.camera = new THREE.PerspectiveCamera( 50, this.width / this.height, 1, this.cameraDistance + 300 );
     this.camera.position.z = this.cameraDistance;
+
+    // controls = new THREE.TrackballControls( camera );
+    //             controls.rotateSpeed = 1.0;
+    //             controls.zoomSpeed = 1.2;
+    //             controls.panSpeed = 0.8;
+    //             controls.noZoom = false;
+    //             controls.noPan = false;
+    //             controls.staticMoving = true;
+    //             controls.dynamicDampingFactor = 0.3;
+
+
+
 
     this.cameraAngle=(Math.PI);
 
@@ -42285,7 +42306,7 @@ Globe.prototype.tick = function(){
 
 
 
-// set the rotation movement
+// span movement and potential interaction
     var renderTime = new Date() - this.lastRenderDate;
     this.lastRenderDate = new Date();
     var rotateCameraBy = (2* Math.PI)/(this.dayLength/renderTime);
@@ -42295,11 +42316,33 @@ Globe.prototype.tick = function(){
     if(!this.active){
         this.cameraDistance += (1000 * renderTime/1000);
     }
+   
+
+var span=true;
+
+onmousemove = function(e){
+if (e.clientX<500){span=false;
+}else{
+span=true;
+}
 
 
-    this.camera.position.x = this.cameraDistance * Math.cos(this.cameraAngle) * Math.cos(this.viewAngle);
-    this.camera.position.y = Math.sin(this.viewAngle) * this.cameraDistance;
-    this.camera.position.z = this.cameraDistance * Math.sin(this.cameraAngle) * Math.cos(this.viewAngle);
+console.log(span);
+       // console.log("mouse location:", 'ys',e.clientX, e.clientY)
+}
+
+
+ if(span){
+     this.camera.position.x = this.cameraDistance * Math.cos(this.cameraAngle) * Math.cos(this.viewAngle);
+     this.camera.position.y = Math.sin(this.viewAngle) * this.cameraDistance;
+     this.camera.position.z = this.cameraDistance * Math.sin(this.cameraAngle) * Math.cos(this.viewAngle);
+     }else{
+
+
+    }
+
+
+   
 
 
     for(var i in this.satellites){
