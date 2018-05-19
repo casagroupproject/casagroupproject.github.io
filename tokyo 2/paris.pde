@@ -2,7 +2,6 @@ int y=4;
 int s=1;
 int k=0;
 int g=4/5;
-int bcolor=0;
 int sun=#f6f062;
 String[] time={
 "12:00",
@@ -33,36 +32,14 @@ String[] time={
 int i=1;
 int num[]={
 
-4,
-2,
-0,
-6,
-8,
-4,
-4,
-2,
-1,
-10,
-13,
-9,2,
-3,
-5,
-4,
-5,
-4,
-3,
-2,
-4,
-5,
-6,
-1
+11,5,9,7,4,5,5,4,8,16,14,13,26,20,5,11,4,5,10,7,6,2,5,1
 };
-
 PImage b;
+int bcolor=0;
 
 void setup() { 
  
-  b=loadImage("tokyo.jpg");
+  b=loadImage("paris.jpg");
 size(580*g-40,340*g);
 background(bcolor);
   rectMode(CENTER);
@@ -82,12 +59,12 @@ text(j,5*g,(340-(j*y+20))*g);}
 
 void draw()
 {b.resize(120,80);
-  image(b,290,15);if(k<=6){stroke(sun);
+  image(b,290,15);if(k<=10){stroke(sun);
 fill(sun);
   ellipse(270*g,50*g,50*g,50*g);
 
 }
-if(k>6&k<=17){
+if(k>10&k<=17){
   stroke(bcolor);
   fill(bcolor);
   rect(270*g,50*g,50*g,50*g);
