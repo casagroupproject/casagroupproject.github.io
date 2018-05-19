@@ -133,6 +133,13 @@
 }
 
 
+.text-label {
+  color: #fff;
+  font-family: "Fira Mono", Monaco, "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  margin: -5px 0 0 15px;
+  pointer-events:none;
+}
+
 	</style>
 
 
@@ -253,14 +260,9 @@
 
 			  var allElements = document.querySelectorAll('.fh5co-portfolio-item');
 			  console.log('querySelectorAll',allElements[1]);
-
-			   console.log('are these all elements',content2);
-
-			  var gallery = document.getElementsByClassName("fh5co-portfolio-figure");
-				
-		
+			  console.log('are these all elements',content2);
 			  
-			  	var objLoader = new THREE.STLLoader();
+			  var objLoader = new THREE.STLLoader();
 			  var counter = 0;
 
 			  for (var _key in models) {
@@ -280,6 +282,11 @@
 			    element.className = "fh5co-portfolio-figure";
 			    element.innerHTML = template;
 			    console.log('tempate replace', template);
+
+				//create density count
+			    let elementText = document.createElement("div");
+			    elementText.className = "fh5co-portfolio-figure";
+			    elementText.innerHTML = template2;
 
 			    //console.log('entire element', element);
 			    //console.log('entire row', content);
@@ -320,6 +327,14 @@
 
 				scene.userData.camera = camera;
 
+//-------------------element to add label to -----------------------------
+				var geometry = new THREE.BoxBufferGeometry( 1, 1, 1);
+				var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+				var cube = new THREE.Mesh( geometry, material );
+				cube.position.set(64,0,64);
+				scene.add( cube );
+
+//-------------------controls-----------------------------
 			    let controls = new THREE.OrbitControls(scene.userData.camera, scene.userData.element);
 			    controls.minDistance = 2;
 			    controls.maxDistance = 5;
@@ -356,9 +371,9 @@
 			                    scene.add( mesh );
 			                    //camera.lookAt(mesh.position);
 			                 //get size of object
-			           var box = new THREE.Box3().setFromObject(mesh);
-			      //console.log( box.min, box.max, box.getSize() );
-			      //console.log(mesh.position);
+			           			var box = new THREE.Box3().setFromObject(mesh);
+			     				 //console.log( box.min, box.max, box.getSize() );
+			      				//console.log(mesh.position);
 
 			                } );
 
