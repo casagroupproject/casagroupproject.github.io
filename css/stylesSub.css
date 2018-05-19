@@ -7357,7 +7357,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-::-webkit-selection {
+/*::-webkit-selection {
   color: #868f90;
   background: #f9f6f0;
 }
@@ -7371,7 +7371,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #868f90;
   background: #f9f6f0;
 }
-
+*/
 #fh5co-header {
   float: left;
   width: 100%;
@@ -7427,10 +7427,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+/*currently turned off
 #fh5co-main {
   clear: both;
-  padding-top: 1em;
-}
+  padding-top: 0em;
+  background:black;
+}*/
 
 #fh5co-content {
   padding: 0 0 7em 0;
@@ -7443,6 +7445,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fh5co-intro {
   padding: 2em 0;
+  background:black;
 }
 @media screen and (max-width: 768px) {
   .fh5co-intro {
@@ -7456,26 +7459,28 @@ h1, h2, h3, h4, h5, h6 {
   color:white;
 }
 
-.section-lead {
+/*currently turned off*/
+/*.section-lead {
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 1em;
   font-family: 'Inconsolata', monospace;
-}
+}*/
 
 #fh5co-portfolio {
-  margin-bottom: 7em;
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  background: #fafafa;
+  margin-bottom: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  background: black;
   float: left;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   #fh5co-portfolio {
-    margin-bottom: 4em;
+    margin-bottom: 0em;
+    background:black;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -7487,6 +7492,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-portfolio .fh5co-portfolio-item {
   float: left;
   width: 100%;
+  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7524,8 +7530,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description {
   background:black;
   padding: 4em;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 15px;
+  line-height: 20px;
 }
 @media screen and (max-width: 1200px) {
   #fh5co-portfolio .fh5co-portfolio-item .fh5co-portfolio-description {
@@ -7553,7 +7559,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-portfolio .fh5co-portfolio-item.fh5co-img-right .fh5co-portfolio-figure {
     position: relative;
     top: auto;
-    bototm: auto;
+    bottom: auto;
     height: 400px;
   }
 }

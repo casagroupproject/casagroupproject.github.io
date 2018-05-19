@@ -47,7 +47,7 @@
 	<!-- Simple Line Icons -->
 <!-- 	<link rel="stylesheet" href="css/simple-line-icons.css"> -->
 	<!-- Theme Style -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylesSub.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -210,12 +210,12 @@
 			var models = {
 			  model1: {
 			    obj: "./assets/test.stl",
-			    mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
+			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
 			    mesh: null
 			  },
 			  model2: {
 			    obj: "./assets/test.stl",
-			    mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
+			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
 			    mesh: null
 			  },
 			   model3: {
@@ -225,7 +225,7 @@
 			  }, 
 			  model4: {
 			    obj: "./assets/test.stl",
-			    mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
+			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
 			    mesh: null
 			  }
 			}
@@ -321,7 +321,7 @@
 			  objLoader.load(models[_key].obj, function ( geometry ) {
 
 			                    // material = new THREE.MeshPhongMaterial( { color: 0xfdf894, specular: 0x111111, shininess: 200 } );
-			                    material = new THREE.MeshNormalMaterial( { color: 0xb28fce, specular: 0x111111, shininess: 200, emissive:0xfdf894} );
+			                    material = new THREE.MeshNormalMaterial();
 			                    mesh = new THREE.Mesh( geometry, material );
 			                    //pos1:moves to the right if positive. pos2: goes up if positive, down if neg
 			                    //mesh.position.set(100, 0, 0 );
