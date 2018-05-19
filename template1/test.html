@@ -87,8 +87,6 @@
 		<script>
 
 			
-			//reduced browsersupport: if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-
 			var canvas;
 
 			var scenes = [], renderer;
@@ -111,54 +109,32 @@
 							mtl:"./assets/Tent_Poles_01.mtl",
 							mesh: null
 						}}
-										
-				// Meshes index
-				//var meshes = {};
-
 
 			init();
 			animate();
 
-			function init() {
-				//entire screen
-				canvas = document.getElementById( "c" );
-				//create array of internal geometries:
-				var geometries = [
-					new THREE.BoxBufferGeometry( 1, 1, 1 ),
-					new THREE.SphereBufferGeometry( 0.5, 12, 8 ),
-					new THREE.DodecahedronBufferGeometry( 0.5 ),
-					new THREE.CylinderBufferGeometry( 0.5, 0.5, 1, 12 )
-				];
-
-			loadingManager = new THREE.LoadingManager();
-				loadingManager.onProgress = function(item, loaded, total){
-					console.log(item, loaded, total);
-				};
-				loadingManager.onLoad = function(){
-					console.log("loaded all resources");
-					RESOURCES_LOADED = true;
-					onResourcesLoaded();
-				};
-
+ function init() {
+		canvas = document.getElementById( "c" );
 
 		var template = document.getElementById( "template" ).text;
 				//console.log('template',template);
 		var content = document.getElementById( "content" );
 
+		var objLoader = new THREE.OBJLoader();
+
 		for( var _key in models ){
-			console.log('key1', _key);
+
+			console.log('key is', _key);
 
 		//(function(key){
-
 				scene = new THREE.Scene();
 	
 				var element = document.createElement( "div" );
 				element.className = "list-item";
-				element.innerHTML = template.replace( '$', _key);
-				console.log('does this work', element.innerHTML);
+				element.innerHTML = template.replace('$', _key);
+				// console.log('does this work', element.innerHTML);
 
-				scene.userData.element = element.querySelector( ".scene" );
-				
+				scene.userData.element = element.querySelector(".scene" );
 				content.appendChild( element );
 
 
@@ -172,9 +148,7 @@
 				controls.enablePan = true;
 				controls.enableZoom = true;
 				scene.userData.controls = controls;
-				
 
-				var objLoader = new THREE.OBJLoader();
 
 				objLoader.load(
 					// resource URL
@@ -183,11 +157,10 @@
 					function ( object ) {
 
 						scene.add( object );
-						console.log(object);
+						console.log('the added object',object);
 
 					},
 				);
-
 
 				scene.add( new THREE.HemisphereLight( 0xaaaaaa, 0x444444 ) );
 
@@ -195,8 +168,7 @@
 				light.position.set( 1, 1, 1 );
 				scene.add( light );
 
-				scenes.push( scene );
-
+				scenes.push(scene );
 	}
 
 			
