@@ -71,6 +71,7 @@
 	<script src="./assets/STLLoader.js"></script>
 	<script src="./assets/MTLLoader.js"></script>
 	<script src="./assets/OrbitControls.js"></script>
+	<script src="js/processing.min.js"></script>
 	
 	<style>
 
@@ -89,8 +90,47 @@
 		.fh5co-portfolio-figure .scene {
 				width: 100%;
 				height: 100%;
-				display:inline-block;
+				display:flex;
 		}
+
+		.processing{
+			display:flex;
+			margin: 0;
+   			padding: 0;
+   			outline : none;
+   			width: 100%;
+		}
+
+
+
+		/*** Works on common browsers ***/
+::selection {
+    background-color: #fdf894;
+    color: white;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #fdf894;
+    color: white;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #fdf894;
+    color: white;
+}
+
+::-ms-selection {
+    background-color: #fdf894;
+    color: white;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #fdf894;
+    color: white;
+}
 
 
 	</style>
@@ -120,40 +160,44 @@
 			<div class="fh5co-portfolio-item ">
 				<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
-					<h2>Project First</h2>
+					<h2>Sleepless Tokyo</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5 style="padding-top:1em;">explore more</h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
-			<div class="fh5co-portfolio-figure"></div>
+			<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
-					<h2>Project Second</h2>
+					<h2>Sleepless London</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5>explore more</h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item ">
 			<!-- 	<div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
-					<h2>Project Third</h2>
+					<h2>Sleepless Delhi</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5>explore more</h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
-				<div class="fh5co-portfolio-figure"></div>
+				<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
-					<h2>Project Fourth</h2>
+					<h2>Sleepless Stockholm</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5>explore more</h5>
 				</div>
 			</div>
-		</div>
-
-		<div id="content">
-			<!-- <div id="info"><a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - multiple elements - webgl</div> -->
 		</div>
 
 		<script id="template" type="notjs">
 			<div class="scene"></div>
-			<div class="description">Scene $</div>
+			// <div class="description">Scene $</div>
 		</script>
 
 		<script>
@@ -230,24 +274,23 @@
 				//left div
 			    let element = document.createElement("div");
 			    element.className = "fh5co-portfolio-figure";
-			    element.innerHTML = template.replace('$', _key);
+			    element.innerHTML = template;
+			    console.log('tempate replace', template);
 
-
-			    console.log('entire element', element);
-			    console.log('entire row', content);
+			    //console.log('entire element', element);
+			    //console.log('entire row', content);
 
 			    scene.userData.element = element.querySelector(".scene");
 
-			    console.log(element.querySelector(".scene"));
+			    ///console.log(element.querySelector(".scene"));
 
 //if counter is 0 append left div, if counter is 1 append right div:
-				console.log('countermodulo', counter%2==0);
+				//console.log('countermodulo', counter%2==0);
 			if (counter%2==0){
 				//console.log(element);
 			    allElements[counter].appendChild(element);
 			} else {
 				allElements[counter].appendChild(element);
-				console.log(content2[0]);
 			}
 
 
@@ -277,12 +320,14 @@
 			  //   );
 			  objLoader.load(models[_key].obj, function ( geometry ) {
 
-			                    material = new THREE.MeshPhongMaterial( { color: 0x0000FF, specular: 0x111111, shininess: 200 } );
+			                    // material = new THREE.MeshPhongMaterial( { color: 0xfdf894, specular: 0x111111, shininess: 200 } );
+			                    material = new THREE.MeshNormalMaterial( { color: 0xb28fce, specular: 0x111111, shininess: 200, emissive:0xfdf894} );
 			                    mesh = new THREE.Mesh( geometry, material );
 			                    //pos1:moves to the right if positive. pos2: goes up if positive, down if neg
 			                    //mesh.position.set(100, 0, 0 );
 			                    //mesh.rotation.set( 0, 0, 0 );
 			                    mesh.scale.set( 0.01, 0.01, 0.01);
+			                    //mesh.position(0,0,0);
 
 			                    mesh.castShadow = true;
 			                    mesh.receiveShadow = true;
