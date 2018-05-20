@@ -101,6 +101,14 @@
    			width: 100%;
 		}
 
+		.title2 {
+		z-index: 999;
+	/*	display:flex;*/
+		position: absolute;
+		text-align:left;
+		float:left;
+		margin-top: 2.5em;
+		}
 
 
 		/*** Works on common browsers ***/
@@ -196,6 +204,7 @@
 		</div>
 
 		<script id="template" type="notjs">
+			<div class="title2"> <h4>Light density: $</h4> </div>
 			<div class="scene"></div>
 			// <div class="description">Scene $</div>
 		</script>
@@ -205,6 +214,8 @@
 			var canvas;
 
 			var scenes = [],renderer;
+
+			var dens =['23','34','65','78'];
 
 			//external geometires
 			var models = {
@@ -243,24 +254,14 @@
 			  //create array of internal geometries:
 			  var template = document.getElementById("template").text;
 			  
-			  console.log('template-text',template);
+			  //console.log('template-text',template);
 
-			//left row (div)
-			  var content = document.getElementsByClassName("fh5co-portfolio-item");
-			//right row (div)
-			  var content2 = document.getElementsByClassName("fh5co-portfolio-item fh5co-img-right");
-
-
+			//get all divs
 			  var allElements = document.querySelectorAll('.fh5co-portfolio-item');
 			  console.log('querySelectorAll',allElements[1]);
-
-			   console.log('are these all elements',content2);
-
-			  var gallery = document.getElementsByClassName("fh5co-portfolio-figure");
 				
-		
 			  
-			  	var objLoader = new THREE.STLLoader();
+			  var objLoader = new THREE.STLLoader();
 			  var counter = 0;
 
 			  for (var _key in models) {
@@ -275,38 +276,36 @@
 			    var axes = new THREE.AxisHelper(100);
     			scene.add(axes);
 
-				//left div
+				//all divs
 			    let element = document.createElement("div");
 			    element.className = "fh5co-portfolio-figure";
-			    element.innerHTML = template;
-			    console.log('tempate replace', template);
+			    //console.log('tempate replace', template);
 
 			    //console.log('entire element', element);
 			    //console.log('entire row', content);
 
-			    scene.userData.element = element.querySelector(".scene");
 
 			    ///console.log(element.querySelector(".scene"));
 
-//if counter is 0 append left div, if counter is 1 append right div:
+				//if counter is 0 append left div, if counter is 1 append right div:
 				//console.log('countermodulo', counter%2==0);
-			if (counter%2==0){
-				//console.log(element);
-			    allElements[counter].appendChild(element);
-			} else {
-				allElements[counter].appendChild(element);
-			}
+				if (counter%2==0){
+					//console.log(element);
+				    allElements[counter].appendChild(element);
+				   element.innerHTML = template.replace('$', dens[counter]);
+				} else {
+					allElements[counter].appendChild(element);
+					element.innerHTML = template.replace('$', dens[counter]);
+				}
 
+			    scene.userData.element = element.querySelector(".scene");
 
-			    // let camera = new THREE.PerspectiveCamera(50, 1, 1, 10);
-			    // camera.position.z = 2;
-			   
-
+//-------------------camera-----------------------------
 			    let camera = new THREE.OrthographicCamera(
 				    allElements[counter].clientWidth / -10, // frustum left plane
 				    allElements[counter].clientWidth / 10, // frustum right plane.
 				    allElements[counter].clientHeight / 10, // frustum top plane.
-				    allElements[counter].clientHeight/ -10, // frustum bottom plane. 
+				    allElements[counter].clientHeight/ -13, // frustum bottom plane. 
 				    -500, // frustum near plane.
 				    500 // frustum far plane.
 				);
@@ -316,10 +315,11 @@
 
 				camera.position.x = 80;
 				camera.position.z = 80;
-				camera.position.y = 40;
+				camera.position.y = 35;
 
 				scene.userData.camera = camera;
 
+//-------------------controls-----------------------------
 			    let controls = new THREE.OrbitControls(scene.userData.camera, scene.userData.element);
 			    controls.minDistance = 2;
 			    controls.maxDistance = 5;
@@ -338,6 +338,8 @@
 
 			  //     }
 			  //   );
+
+//-------------------STL loader-----------------------------
 			  objLoader.load(models[_key].obj, function ( geometry ) {
 
 			                    // material = new THREE.MeshPhongMaterial( { color: 0xfdf894, specular: 0x111111, shininess: 200 } );
@@ -373,7 +375,7 @@
 			    counter ++;
 
 			  }
-
+//-------------------renderer-----------------------------
 			  renderer = new THREE.WebGLRenderer({
 			    canvas: canvas,
 			    antialias: true
