@@ -1,7 +1,7 @@
 int y=4;
 int s=1;
 int k=0;
-int g=4/5;
+int g=2;
 int bcolor=0;
 int sun=#f6f062;
 String[] time={
@@ -154,7 +154,7 @@ rect((20+(f)*20)*g,(340-(num[f]*y+20))*g,5*g,5*g);
 
 
 fill(255);
-rect(20+(j)*20,340-(num[j]*y+20),5,5);
+rect((20+(j)*20)*g,(340-(num[j]*y+20))*g,5*g,5*g);
 
 
 
