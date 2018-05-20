@@ -14,6 +14,7 @@ var p;
 var t;
 var spacing;
 var time;
+var img;
 
 var selected = [];
 
@@ -26,8 +27,8 @@ var selected = [];
 function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
-  //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-  table = loadTable('circadian.csv', 'csv', 'header');
+  table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
+  //table = loadTable('circadian.csv', 'csv', 'header');
   
 }
 
@@ -35,6 +36,8 @@ function setup() {
 
   //frameRate(60);
   createCanvas(1750, 1200);
+img = loadImage("http://0.0.0.0:8000/Star_Const.png");
+
 //createCanvas(800, 400)
   spacing = 80;
   selected.length = 5; 
@@ -104,7 +107,7 @@ time = 0;
 function draw() {
   //wave background
   background(0,0,0);
-
+     image(img,1420, 90, img.width/2, img.height/2);
 
       push();
       fill(255, 255, 255);
@@ -138,8 +141,8 @@ function draw() {
         push();
         //fill(0, 102, 153);
         fill(255);
-         text('SYSTOLIC BP', 470, 50, 200, 300); 
-         text(table.getString(r1, 1), 470, 70, 100, 300); 
+         text('SYSTOLIC BP', 470, 280, 200, 300); 
+         text(table.getString(r1, 1), 470, 290, 100, 300); 
 
 
          pop();
@@ -156,7 +159,7 @@ function draw() {
            
            stroke(255);
           //text('TEST', x4+500, y4+100, 100, 200); 
-          vertex(x4+630, y4+100);
+          vertex(x4+630, y4+290);
 
         }
         endShape();
@@ -170,8 +173,8 @@ function draw() {
                 push();
        fill(255);
        strokeWeight(1);
-         text('DIASTOLIC BP', 470, 350, 200, 300); 
-        text(table.getString(r1, 2), 470, 370, 100, 300); 
+         text('DIASTOLIC BP', 470, 450, 200, 300); 
+        text(table.getString(r1, 2), 470, 470, 100, 300); 
          
 
          pop();
@@ -188,7 +191,7 @@ function draw() {
           stroke(255);
           // y is determined by our function
           y4 = sin(x4*frequency3+phi)* amplitude;
-          vertex(x4+630, y4+400);
+          vertex(x4+630, y4+500);
 
         }
         endShape();
@@ -203,9 +206,9 @@ function draw() {
         
                 push();
         fill(255);
-         strokeWeight(1);
-         text('HEART RATE', 470, -160, 200, 300); 
-         text(table.getString(r1, 3), 470, -130, 100, 300); 
+         strokeWeight(.5);
+         text('HEART RATE', 470, 80, 200, 300); 
+         text(table.getString(r1, 3), 470, 120, 100, 300); 
          pop();
         // if we consider 1 pixel to be 1 radian, then this is the number 
         // of radians between points
@@ -220,7 +223,7 @@ function draw() {
           strokeWeight(1);
           // y is determined by our function
           y4 = sin(x4*frequency4+phi)* amplitude;
-          vertex(x4+630, y4-200);
+          vertex(x4+630, y4+100);
 
         }
         endShape();
