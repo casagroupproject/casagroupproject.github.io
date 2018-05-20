@@ -1,8 +1,7 @@
 int y=4;
-int s=1;
 int k=0;
-int g=4/5;
 int bcolor=0;
+int g=2;
 int sun=#f6f062;
 String[] time={
 "12:00",
@@ -31,15 +30,15 @@ String[] time={
 "11:00",
 };
 int i=1;
+int k=1;
 int num[]={
-11,5,12,7,60,51,29,16,13,12,3,3,0,4,3,6,16,15,7,15,10,10,27,16
+0,0,1,4,0,1,3,1,4,2,2,0,1,0,0,2,1,2,0,0,2,0,1,2
 };
 
 PImage b;
-
 void setup() { 
  
-  b=loadImage("del1.jpg");
+  b=loadImage("stock.jpg");
 size(580*g-40,340*g);
 background(bcolor);
   rectMode(CENTER);
@@ -59,32 +58,16 @@ text(j,5*g,(340-(j*y+20))*g);}
 
 void draw()
 {b.resize(120,80);
-  image(b,290,15);if(k<=7){stroke(sun);
+  image(b,290,15);
+stroke(sun);
 fill(sun);
   ellipse(270*g,50*g,50*g,50*g);
 
-}
-if(k>7&k<=18){
-  stroke(bcolor);
-  fill(bcolor);
-  rect(270*g,50*g,50*g,50*g);
-stroke(255,255,0);
-fill(255,255,0);
-ellipse(270*g,50*g,40*g,40*g);
-stroke(bcolor);
-fill(bcolor);
-ellipse(260*g,40*g,50*g,50*g);
-}
 
-if(k>18){  stroke(bcolor);
-  fill(bcolor);
-  rect(270*g,50*g,50*g,50*g);
-  fill(sun);
-  ellipse(270*g,50*g,50*g,50*g);
 
-}
-k++;//sun and moon
-fill(#FECEA8);
+
+
+  fill(#FECEA8);
 textSize(50*g);
 
   fill(  #9370DB);
@@ -99,6 +82,7 @@ fill(  #9370DB);
 stroke(  #9370DB);
 
 line((20+(i-1)*20)*g,(340-(num[i-1]*y+20))*g,(20+(i)*20)*g,(340-(num[i]*y+20))*g);
+
 
 
 rect((20+(0)*20)*g,(340-(num[0]*y+20))*g,5*g,5*g);
@@ -130,7 +114,7 @@ rect((20+(f)*20)*g,(340-(num[f]*y+20))*g,5*g,5*g);
 
 
 fill(255);
-rect(20+(j)*20,340-(num[j]*y+20),5,5);
+rect((20+(j)*20)*g,(340-(num[j]*y+20))*g,5*g,5*g);
 
 
 

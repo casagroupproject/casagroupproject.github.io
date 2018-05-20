@@ -343,6 +343,7 @@
 			  objLoader.load(models[_key].obj, function ( geometry ) {
 
 			                    // material = new THREE.MeshPhongMaterial( { color: 0xfdf894, specular: 0x111111, shininess: 200 } );
+			                    console.log('test', geometry.attributes.position.count);
 			                    material = new THREE.MeshNormalMaterial();
 			                    mesh = new THREE.Mesh( geometry, material );
 			                    //pos1:moves to the right if positive. pos2: goes up if positive, down if neg

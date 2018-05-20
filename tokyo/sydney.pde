@@ -1,7 +1,8 @@
 int y=4;
-int s=1;
 int k=0;
-int g=4/5;
+PImage b;
+int g=2;
+int bcolor=0;
 int sun=#f6f062;
 String[] time={
 "12:00",
@@ -31,15 +32,13 @@ String[] time={
 };
 int i=1;
 int num[]={
-
-11,5,9,7,4,5,5,4,8,16,14,13,26,20,5,11,4,5,10,7,6,2,5,1
+21,31,9,8,6,13,9,12,11,12,13,12,10,25,19,25,46,41,35,46,25,26,13,22
 };
-PImage b;
-int bcolor=0;
+
 
 void setup() { 
  
-  b=loadImage("paris.jpg");
+  b=loadImage("syd.jpg");
 size(580*g-40,340*g);
 background(bcolor);
   rectMode(CENTER);
@@ -56,15 +55,15 @@ text(j,5*g,(340-(j*y+20))*g);}
 //y
 }
 
-
 void draw()
 {b.resize(120,80);
-  image(b,290,15);if(k<=10){stroke(sun);
+  image(b,290,15);
+  if(k<=6){stroke(sun);
 fill(sun);
   ellipse(270*g,50*g,50*g,50*g);
 
 }
-if(k>10&k<=17){
+if(k>6&k<=17){
   stroke(bcolor);
   fill(bcolor);
   rect(270*g,50*g,50*g,50*g);
@@ -101,7 +100,6 @@ stroke(  #9370DB);
 line((20+(i-1)*20)*g,(340-(num[i-1]*y+20))*g,(20+(i)*20)*g,(340-(num[i]*y+20))*g);
 
 
-
 rect((20+(0)*20)*g,(340-(num[0]*y+20))*g,5*g,5*g);
 rect((20+(i)*20)*g,(340-(num[i]*y+20))*g,5*g,5*g);
 
@@ -129,10 +127,8 @@ rect((20+(0)*20)*g,(340-(num[0]*y+20))*g,5*g,5*g);
 rect((20+(f)*20)*g,(340-(num[f]*y+20))*g,5*g,5*g);
 }
 
-
 fill(255);
-rect(20+(j)*20,340-(num[j]*y+20),5,5);
-
+rect((20+(j)*20)*g,(340-(num[j]*y+20))*g,5*g,5*g);
 
 
 }
