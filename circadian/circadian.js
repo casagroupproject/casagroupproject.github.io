@@ -36,7 +36,8 @@ function setup() {
 
   //frameRate(60);
   createCanvas(1750, 1200);
-img = loadImage("http://0.0.0.0:8000/Star_Const.png");
+//img = loadImage("http://0.0.0.0:8000/Star_Const.png");
+img = loadImage("Star_Const.png");
 
 //createCanvas(800, 400)
   spacing = 80;
