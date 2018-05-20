@@ -27,8 +27,8 @@ var selected = [];
 function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
-  table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-  //table = loadTable('circadian.csv', 'csv', 'header');
+ //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
+  table = loadTable('circadian.csv', 'csv', 'header');
   
 }
 
