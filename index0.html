@@ -129,10 +129,7 @@
                         }
                     });
 
-                    // $("#add-element li").click(function(e){
-                    //     $("#add-element li").removeClass("selected");
-                    //     $(e.currentTarget).addClass("selected");
-                    // });
+                
                      animate();
 
 
@@ -205,120 +202,7 @@
 
                 window.addEventListener('resize', onWindowResize, false );
 
-                // $("#globe-color").spectrum({
-                //     color: "#2A363B",
-                //     showButtons: false,
-                //     showInput: false,
-                //     change: function(color){
-                //         if(globe){
-                //             globe.setBaseColor(color.toHexString());
-                //         }
-                //     }
-                // }); 
-
-                // $("#pin-color").spectrum({
-                //     color: '"#ffcc00',
-                //     showButtons: false,
-                //     showInput: false,
-                //     change: function(color){
-                //         if(globe){
-                //             globe.setPinColor(color.toHexString());
-                //         }
-                //     }
-                // }); 
-
-                // $("#marker-color").spectrum({
-                //     color: "#ffcc00",
-                //     showButtons: false,
-                //     showInput: false,
-                //     change: function(color){
-                //         if(globe){
-                //             globe.setMarkerColor(color.toHexString());
-                //         }
-                //     }
-                // }); 
-
-                // $("#satellite-color").spectrum({
-                //     color: "#ff0000",
-                //     showButtons: false,
-                //     showInput: false,
-                //     change: function(color){
-                //         if(globe){
-                //             for(var x in globe.satellites){
-                //                 globe.satellites[x].changeCanvas(null, null, color.toHexString());
-                //             }
-                //         }
-                //     }
-
-                // }); 
-
-
-//potnetial interaction
-                // $("[data-slider]")
-                // .each(function () {
-                //     var input = $(this);
-                //     $("<span>")
-                //         .addClass("slider-output")
-                //         .insertAfter($(this))
-                //         .html(input.val());
-
-                //     })
-                //     .bind("slider:ready slider:changed", function (event, data) {
-                //         $(this)
-                //         .nextAll(".slider-output:first")
-                //         .html(data.value.toFixed(3));
-                //         });
-
-                // $(":checkbox").switchButton();
-
-                // $("#globe-scale").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         globe.setScale(data.value);
-                //     }
-                // });
-
-                // $("#globe-va").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         globe.viewAngle = data.value;
-                //     }
-                // });
-
-                // $("#globe-spr").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         globe.dayLength = data.value * 1000;
-
-                //     }
-                // });
-
-                // $("#globe-mp").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         globe.setMaxPins(data.value);
-
-                //     }
-                // });
-
-                // $("#globe-mm").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         globe.setMaxMarkers(data.value);
-                //     }
-                // });
-
-                // $("#globe-sa").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         for(var x in globe.satellites){
-                //             globe.satellites[x].changeAltitude(data.value);
-                //         }
-                //     }
-                // });
-
-                // $("#globe-si").bind("slider:changed", function (event, data) {
-                //     if(globe){
-                //         for(var x in globe.satellites){
-                //             globe.satellites[x].changeCanvas(data.value);
-                //         }
-                //     }
-                // });
-
+     
 //configure and render out the globe
                 var docHeight = $(document).height();
 
@@ -394,12 +278,12 @@
             </div> 
             <div id="info-box">
                 City List <br/>
-                <a href="template1/index1.html">London</a> <br/>
-                <a href="template2/index2.html">New York</a> <br/>
-                <a href="url">Tokyo</a> <br/>
-                <a href="url">Sydney</a><br/>
-                <a href="url">Stockholm</a><br/>
-                <a href="url">Delhi</a><br/>
+                <a href="subpage0.html#londonPannel">London</a> <br/>
+                <a href="subpage0.html#newyorkPannel">New York</a> <br/>
+                <a href="subpage0.html#tokyoPannel">Tokyo</a> <br/>
+                <a href="subpage0.html#sydneyPannel">Sydney</a><br/>
+                <a href="subpage0.html#stockholmPannel">Stockholm</a><br/>
+                <a href="subpage0.html#delhiPannel">Delhi</a><br/>
               
             </div>
 
@@ -416,20 +300,13 @@
 
             <div id="options">
                 <div id="options-content">
-                   <!--  <h3>Add element by clicking map below</h3>
-                    <img class="projection" src="resources/point_picker.png" width= "280px"/>
-                    <ul id = "add-element">
-                        <li id="add-pin" class="button selected">Drop Pin</li>
-                        <li id="add-marker" class="button">Marker</li>
-                        <li id="add-satellite" class="button">Satellite</li>
-                    </ul>
-                    <h3>Configure Globe</h3> -->
-
+            
                     <div>
                         <label>
                             Color Palette
                         </label>
                         <ul id="color-options">
+
 <!--              change the core object color              -->
                             <li title="Globe Color"><input type="text" id="globe-color" value="#b28fce"></li>
                             <!-- <li title="Pin Color"><input type="text" id="pin-color" value="#8FD8D8"></li> -->
@@ -439,63 +316,13 @@
                             <li title="Satellite Core Color"><input type="text" id="satellite-color" value="#86c166"></li>
                         </ul>
 
-<!--
-                        <label>
-                            Globe Scale
-                        </label>
-                        <input type="text" id="globe-scale" data-slider="true" data-slider-range=".1, 3.0" data-slider-step=".01" data-slider-highlight="true" value="1.0"/>
 
-                        <label>
-                            View Angle
-                        </label>
-                        <input type="text" id="globe-va" data-slider="true" data-slider-range="-1.57, 1.57" data-slider-step=".01" data-slider-highlight="true" value=".1"/>
-
-                        <label>
-                            Seconds per Rotation
-                        </label>
-                        <input type="text" id="globe-spr" data-slider="true" data-slider-range="1, 120" data-slider-step="1" data-slider-highlight="true" value="28"/>
--->
-
-                        <!--
-                        <label>
-                            Points per Degree
-                        </label>
-                        <input type="text" id="globe-ppd" data-slider="true" data-slider-range=".5,4" data-slider-step=".1" data-slider-highlight="true" value="1.1"/>
-
-                        <label>
-                            Point Size
-                        </label>
-                        <input type="text" id="globe-ps" data-slider="true" data-slider-range=".1,1.0" data-slider-step=".1" data-slider-highlight="true" value=".6"/>
-                        -->
-
-                      <!--    <label>
-                            Intro Duration (ms)
-                        </label> -->
                         <input type="text" id="globe-id" data-slider="true" data-slider-range="500,5000" data-slider-step="100" data-slider-highlight="true" value="2000"/>
 
-                      <!--   <label>
-                            Max Pins
-                        </label> -->
+             
                         <input type="text" id="globe-mp" data-slider="true" data-slider-range="10,1000" data-slider-step="10" data-slider-highlight="true" value="500"/>
 
-                        <label>
-                            Max Markers
-                        </label>
-                        <input type="text" id="globe-mm" data-slider="true" data-slider-range="1,10" data-slider-step="1" data-slider-highlight="true" value="4"/>
-
-                        <label>
-                            Satellite Altitude
-                        </label>
-                        <input type="text" id="globe-sa" data-slider="true" data-slider-range="1.0,3.0" data-slider-step=".01" data-slider-highlight="true" value="1.3"/>
-
-                        <label>
-                            Satellite Intensity
-                        </label>
-                        <input type="text" id="globe-si" data-slider="true" data-slider-range="3,12" data-slider-step="1" data-slider-highlight="true" value="8"/>
-
-                        <label>
-                            Load Dummy Data
-                        </label>
+         
                         <div class="switch">
                             <input type="checkbox" id="globe-dd" value="1" checked>
                         </div>

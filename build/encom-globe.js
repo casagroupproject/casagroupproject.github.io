@@ -42329,7 +42329,7 @@ var Marker = function(lat, lon, text, altitude, url,previous, scene, _opts){
         markerColor: "#FFCC00",
         labelColor: "#FFF",
         font: "Inconsolata",
-        fontSize: 20,
+        fontSize: 30,
         drawTime: 2000,
         lineSegments: 150
     }
