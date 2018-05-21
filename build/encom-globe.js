@@ -42324,12 +42324,12 @@ var Marker = function(lat, lon, text, altitude, url,previous, scene, _opts){
 
     /* options that can be passed in */
     var opts = {
-        lineColor: "#FFCC00",
+        lineColor: "#f6f062",
         lineWidth: 1,
-        markerColor: "#FFCC00",
-        labelColor: "#FFF",
+        markerColor: "#f6f062",
+        labelColor: "#f6f062",
         font: "Inconsolata",
-        fontSize: 30,
+        fontSize: 25,
         drawTime: 2000,
         lineSegments: 150
     }
