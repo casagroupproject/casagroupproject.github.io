@@ -35,7 +35,7 @@ function preload() {
 function setup() {
 
   //frameRate(60);
-  createCanvas(1750, 1200);
+  createCanvas(windowWidth, windowHeight);
 //img = loadImage("http://0.0.0.0:8000/Star_Const.png");
 img = loadImage("Star_Const.png");
 
@@ -108,18 +108,21 @@ time = 0;
 function draw() {
   //wave background
   background(0,0,0);
-     image(img,1420, 90, img.width/2, img.height/2);
+     image(img,1600, 50, img.width/2, img.height/2);
 
       push();
       fill(255, 255, 255);
       text('DAYTIME/NIGHTIME(Length of Darkness)', 60, 30, 300, 200);
       textFont('Courier-Bold', 32);
-            text('TIME: ' + table.getString(r1, 0), 540, 10, 360, 200);
+            text('TIME: ' + table.getString(r1, 0), 640, 660, 360, 200);
       textFont('Courier-Bold', 32);
-      text('PLACE: Tokyo', 900, 10, 360, 200);
+      text('PLACE: London', 1050, 660, 360, 200);
       text('SUBJECT: Male', 1300, 10, 360, 200);
       textFont('Courier-Bold', 14);
       text('LIGHT-SQM READING as Brightness Clock', 550, 250, 100, 200); 
+             fill(255);
+         strokeWeight(.5);
+         text('Constellation: ORion', 1300, 150, 200, 300); 
       //text('Clock Hand=' + r1, 100, 180, 100, 200); 
       pop();
  
@@ -158,7 +161,8 @@ function draw() {
           // y is determined by our function
           y4 = sin(x4*frequency2+phi)* amplitude;
            
-           stroke(255);
+                 strokeWeight(3);
+           stroke(246, 240, 98);
           //text('TEST', x4+500, y4+100, 100, 200); 
           vertex(x4+630, y4+290);
 
@@ -189,9 +193,11 @@ function draw() {
           
           // calculate where we are along x
           x4 = angle4*i;
-          stroke(255);
+          stroke(246, 240, 98);
           // y is determined by our function
           y4 = sin(x4*frequency3+phi)* amplitude;
+           strokeWeight(3);
+           stroke(246, 240, 98);
           vertex(x4+630, y4+500);
 
         }
@@ -207,7 +213,7 @@ function draw() {
         
                 push();
         fill(255);
-         strokeWeight(.5);
+        strokeWeight(.5);
          text('HEART RATE', 470, 80, 200, 300); 
          text(table.getString(r1, 3), 470, 120, 100, 300); 
          pop();
@@ -221,9 +227,10 @@ function draw() {
           
           // calculate where we are along x
           x4 = angle4*i;
-          strokeWeight(1);
+          strokeWeight(3);
           // y is determined by our function
           y4 = sin(x4*frequency4+phi)* amplitude;
+           stroke(246, 240, 98);
           vertex(x4+630, y4+100);
 
         }
@@ -235,7 +242,8 @@ function draw() {
       //MOOD CIRCLE
       noStroke();
  
-fill(count4, count3, count2);
+//fill(count4, count3, count2);
+   fill(178, count4, 242);
 ellipse(0, 0, 450, 450);
 push();
   for(var i = 0; i < 360; i+=2){
@@ -249,7 +257,9 @@ push();
 
     noStroke();
 
-    fill(count4, count3, count2+30);
+    //fill(count4, count3, count2+30);
+   fill(178, count4 , 242-count2);
+
     ellipse(x_w, y_w, w_w, w_w);
 
   }
@@ -359,21 +369,21 @@ push();
  
 
           stroke(204, 0, 0);
-          scribble.scribbleRoundedRect(80, 590,  anger_count/10, anger_count/10, 400);
+          scribble.scribbleRoundedRect(80, 590,  anger_count/8, anger_count/8, 400);
           strokeWeight(1); 
           fill(255);
           text("Anger",60, 660);
           strokeWeight(9);
           noFill();
          stroke(255, 128, 0);
-        scribble.scribbleEllipse( 150, 590, joy_count/10, joy_count/10);
+        scribble.scribbleEllipse( 150, 590, joy_count/8, joy_count/8);
          strokeWeight(1); 
           fill(255);
           text("Joy",130, 660);
          //fill(255, 153, 153);
          strokeWeight(5);
          stroke(0, 51, 102);
-        scribble.scribbleRect(220, 590, sadness_count/10, sadness_count/10);
+        scribble.scribbleRect(220, 590, sadness_count/8, sadness_count/8);
           strokeWeight(1); 
           fill(255);
           text("Sad",200, 660);
@@ -382,7 +392,7 @@ push();
          //fill(192, 192, 192);
          strokeWeight(1); 
          noFill();
-        ellipse( 300, 590, unknown_count/10, unknown_count/10);
+        ellipse( 300, 590, unknown_count/8, unknown_count/8);
         fill(255);
         noStroke();
         fill(102, 0, 102);
@@ -524,7 +534,8 @@ function Pendulum(origin_, r_) {
 
 push();
     stroke(9);  
-    fill(255,255,51);
+    //fill(255,255,51);
+    fill(246, 240, 98);
 
 
   star(this.position.x-700, this.position.y+100, 80, 100, 40); 
@@ -574,6 +585,8 @@ function star(x, y, radius1, radius2, npoints) {
   endShape(CLOSE);
 }
 
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 
