@@ -35,7 +35,8 @@ function preload() {
 function setup() {
 
   //frameRate(60);
-  createCanvas(1750, 1200);
+  createCanvas(windowWidth, windowHeight);
+  //createCanvas(windowWidth, windowHeight);
 //img = loadImage("http://0.0.0.0:8000/Star_Const.png");
 img = loadImage("Star_Const.png");
 
@@ -108,18 +109,21 @@ time = 0;
 function draw() {
   //wave background
   background(0,0,0);
-     image(img,1420, 90, img.width/2, img.height/2);
+     image(img, width*.85,  height*.05, img.width/2, img.height/2);
 
       push();
       fill(255, 255, 255);
       text('DAYTIME/NIGHTIME(Length of Darkness)', 60, 30, 300, 200);
       textFont('Courier-Bold', 32);
-            text('TIME: ' + table.getString(r1, 0), 540, 10, 360, 200);
+            text('TIME: ' + table.getString(r1, 0), 640, 660, 360, 200);
       textFont('Courier-Bold', 32);
-      text('PLACE: Tokyo', 900, 10, 360, 200);
+      text('PLACE: London', 1050, 660, 360, 200);
       text('SUBJECT: Male', 1300, 10, 360, 200);
       textFont('Courier-Bold', 14);
       text('LIGHT-SQM READING as Brightness Clock', 550, 250, 100, 200); 
+             fill(255);
+         strokeWeight(.5);
+         text('Constellation: ORion', 1300, 150, 200, 300); 
       //text('Clock Hand=' + r1, 100, 180, 100, 200); 
       pop();
  
@@ -158,7 +162,8 @@ function draw() {
           // y is determined by our function
           y4 = sin(x4*frequency2+phi)* amplitude;
            
-           stroke(255);
+                 strokeWeight(3);
+           stroke(246, 240, 98);
           //text('TEST', x4+500, y4+100, 100, 200); 
           vertex(x4+630, y4+290);
 
@@ -189,9 +194,11 @@ function draw() {
           
           // calculate where we are along x
           x4 = angle4*i;
-          stroke(255);
+          stroke(246, 240, 98);
           // y is determined by our function
           y4 = sin(x4*frequency3+phi)* amplitude;
+           strokeWeight(3);
+           stroke(246, 240, 98);
           vertex(x4+630, y4+500);
 
         }
@@ -207,7 +214,7 @@ function draw() {
         
                 push();
         fill(255);
-         strokeWeight(.5);
+        strokeWeight(.5);
          text('HEART RATE', 470, 80, 200, 300); 
          text(table.getString(r1, 3), 470, 120, 100, 300); 
          pop();
@@ -221,9 +228,10 @@ function draw() {
           
           // calculate where we are along x
           x4 = angle4*i;
-          strokeWeight(1);
+          strokeWeight(3);
           // y is determined by our function
           y4 = sin(x4*frequency4+phi)* amplitude;
+           stroke(246, 240, 98);
           vertex(x4+630, y4+100);
 
         }
@@ -235,8 +243,9 @@ function draw() {
       //MOOD CIRCLE
       noStroke();
  
-fill(count4, count3, count2);
-ellipse(0, 0, 450, 450);
+//fill(count4, count3, count2);
+   fill(178, count4, 242);
+ellipse(0, 0, width*.25, width*.25);
 push();
   for(var i = 0; i < 360; i+=2){
     var x_w = cos(radians(i)) * 50;
@@ -249,8 +258,10 @@ push();
 
     noStroke();
 
-    fill(count4, count3, count2+30);
-    ellipse(x_w, y_w, w_w, w_w);
+    //fill(count4, count3, count2+30);
+   fill(178, count4 , 242-count2);
+
+    //ellipse(x_w, y_w, w_w, w_w);
 
   }
   time++;
@@ -295,7 +306,7 @@ push();
         fill(255);
         strokeWeight(.5);
         //noStroke();
-         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', 60, 750, 450, 400); 
+         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.03, height*0.75, 450, 400); 
          //text('Freq= '+freq, 60, 730, 300, 400); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
          pop();
@@ -309,7 +320,7 @@ push();
   for (var i = 0; i < waveform.length; i++){
     var x = map(i, 0, waveform.length, 0, width/3);
     var y = map(waveform[i], -1, 1, height/8, 0);
-    vertex(60+x, 800  +y);
+    vertex(width*0.02+x, height*0.8+y);
   }
   endShape();
      noStroke();
@@ -345,7 +356,7 @@ push();
        push();
 
         fill(255);
-        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, 60, 450, 350, 400); 
+        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, 60, width*0.23, width*0.25, 100); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
 
 
@@ -359,40 +370,40 @@ push();
  
 
           stroke(204, 0, 0);
-          scribble.scribbleRoundedRect(80, 590,  anger_count/10, anger_count/10, 400);
+          scribble.scribbleRoundedRect(width*0.03, height*0.6,  anger_count/8, anger_count/8, 400);
           strokeWeight(1); 
           fill(255);
-          text("Anger",60, 660);
+          text("Anger",width*0.02,height*0.7);
           strokeWeight(9);
           noFill();
          stroke(255, 128, 0);
-        scribble.scribbleEllipse( 150, 590, joy_count/10, joy_count/10);
+        scribble.scribbleEllipse( width*0.07, height*0.6, joy_count/8, joy_count/8);
          strokeWeight(1); 
           fill(255);
-          text("Joy",130, 660);
+          text("Joy",width*0.07,height*0.7);
          //fill(255, 153, 153);
          strokeWeight(5);
          stroke(0, 51, 102);
-        scribble.scribbleRect(220, 590, sadness_count/10, sadness_count/10);
+        scribble.scribbleRect(width*0.11, height*0.6, sadness_count/8, sadness_count/8);
           strokeWeight(1); 
           fill(255);
-          text("Sad",200, 660);
+          text("Sad",width*0.10,height*0.7);
           strokeWeight(2);
          stroke(192, 192, 192);
          //fill(192, 192, 192);
          strokeWeight(1); 
          noFill();
-        ellipse( 300, 590, unknown_count/10, unknown_count/10);
+        ellipse( width*0.15, height*0.6, unknown_count/8, unknown_count/8);
         fill(255);
         noStroke();
         fill(102, 0, 102);
-         ellipse( 390, 590, 50, 50);
+         ellipse( width*0.21, height*0.6, 50, 50);
          strokeWeight(1); 
           fill(255);
-          text("Unknown",270, 660);
+          text("Unknown",width*0.14,height*0.7);
           strokeWeight(1); 
           fill(255);
-          text("Sound On/Off",390, 650);
+          text("Sound On/Off",width*0.21,height*0.7);
 
        pop();
 
@@ -432,7 +443,7 @@ pop();
         if(selected[i]){
            fill(150,150,255) 
            //point(70+ i*spacing, 480, 100);
-           text("On", 70+ i*spacing, 520)
+           text("On", (width*.02)+ i*spacing, height*.55)
 
 
            if(selected[4]==true){
@@ -524,7 +535,8 @@ function Pendulum(origin_, r_) {
 
 push();
     stroke(9);  
-    fill(255,255,51);
+    //fill(255,255,51);
+    fill(246, 240, 98);
 
 
   star(this.position.x-700, this.position.y+100, 80, 100, 40); 
@@ -550,7 +562,7 @@ push();
   push();
   translate(width*0.08, height*0.05);
   //rotate(frameCount / -100.0);
-  star(this.position.x-700, this.position.y-40, 20, 50, 5); 
+  star(this.position-(width*.07), this.position.y-(height*0.05), 20, 50, 5); 
   pop();
     }
     pop();  
@@ -574,6 +586,8 @@ function star(x, y, radius1, radius2, npoints) {
   endShape(CLOSE);
 }
 
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 
