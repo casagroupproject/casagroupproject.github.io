@@ -27,8 +27,8 @@ var selected = [];
 function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
- table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-  //table = loadTable('circadian.csv', 'csv', 'header');
+ //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
+  table = loadTable('circadian.csv', 'csv', 'header');
   
 }
 
@@ -41,7 +41,7 @@ function setup() {
 img = loadImage("Star_Const.png");
 
 //createCanvas(800, 400)
-  spacing = 80;
+  spacing = 60;
   selected.length = 5; 
     
     for(var i =0; i<selected.length; i++)
@@ -110,21 +110,21 @@ time = 0;
 function draw() {
   //wave background
   background(0,0,0);
-     image(img, width*.85,  height*.05, img.width/2, img.height/2);
+     image(img, width*.85,  height*.05, img.width/3, img.height/3);
 
       push();
       fill(255, 255, 255);
-      text('DAYTIME/NIGHTIME(Length of Darkness)', 60, 30, 300, 200);
+      text('DAYTIME/NIGHTIME(Length of Darkness)', width*0.02, 30, 300, 200);
       textFont('Courier-Bold', 32);
-            text('TIME: ' + table.getString(r1, 0), width*.45, height*.7, 360, 200);
+            text('TIME: ' + table.getString(r1, 0), width*.45, height*.8, 360, 200);
       textFont('Courier-Bold', 32);
-      text('PLACE: London', width*.45, height*.8, 360, 200);
-      text('SUBJECT: Male', 1300, 10, 360, 200);
+      text('PLACE: London', width*.45, height*.9, 360, 200);
+      text('SUBJECT: Male', width*.7, height*.015, 360, 200);
       textFont('Courier-Bold', 14);
-      text('LIGHT-SQM READING as Brightness Clock', 550, 250, 100, 200); 
+      text('LIGHT-SQM READING as Brightness Clock',  width*.35, height*.6, 100, 200); 
              fill(255);
          strokeWeight(.5);
-         text('Constellation: ORion', 1300, 150, 200, 300); 
+         text('Constellation: Orion', width*.7, height*.15, 200, 300); 
       //text('Clock Hand=' + r1, 100, 180, 100, 200); 
       pop();
  
@@ -310,7 +310,7 @@ push();
         fill(255);
         strokeWeight(.5);
         //noStroke();
-         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.03, height*0.75, 450, 400); 
+         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.02, height*0.75, 450, 400); 
          //text('Freq= '+freq, 60, 730, 300, 400); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
          pop();
@@ -360,7 +360,7 @@ push();
        push();
 
         fill(255);
-        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, 60, width*0.23, width*0.25, 100); 
+        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, width*0.02, width*0.23, width*0.35, 200); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
 
 
