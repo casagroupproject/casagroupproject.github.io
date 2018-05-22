@@ -116,11 +116,15 @@ function draw() {
       push();
       fill(255, 255, 255);
       text('DAYTIME/NIGHTIME(Length of Darkness)', width*0.02, 30, 300, 200);
-      textFont('Courier-Bold', 32);
+      textFont('Courier-Bold', 26);
+  fill(178, 143, 206);
+            text('Circadian Clock', width*0.25, 20, 300, 200);
+      textFont('Courier-Bold', 20);
+      fill(255, 255, 255);
             text('TIME: ' + table.getString(r1, 0), width*.45, height*.8, 360, 200);
-      textFont('Courier-Bold', 32);
+      textFont('Courier-Bold', 20);
       text('PLACE: London', width*.45, height*.9, 360, 200);
-      text('SUBJECT: Male', width*.7, height*.015, 360, 200);
+      text('SUBJECT: Male', width*.7, height*.015, 320, 200);
       textFont('Courier-Bold', 14);
       text('LIGHT-SQM READING as Brightness Clock',  width*.35, height*.6, 100, 200); 
              fill(255);
@@ -252,7 +256,7 @@ push();
   for(var i = 0; i < 360; i+=2){
     var x_w = cos(radians(i)) * 50;
     var y_w = sin(radians(i)) *100;
-    var w_w = sin(radians(time+i )) * 290;
+    var w_w = sin(radians(time+i )) * 150;
     w_w = abs(w_w);
 
     var col=map(i,0,360,120,255);
@@ -263,7 +267,7 @@ push();
     //fill(count4, count3, count2+30);
    fill(178, count4 , 242-count2);
 
-    //ellipse(x_w, y_w, w_w, w_w);
+    ellipse(x_w, y_w, w_w, w_w);
 
   }
   time++;
