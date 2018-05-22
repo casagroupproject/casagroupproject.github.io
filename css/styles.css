@@ -44,7 +44,7 @@ h3 {
 
 #info-box-two{
     position:absolute;
-    bottom: 50px;
+    bottom: 20px;
     right: 10px;
 
     /*visibility: hidden;*/
@@ -54,7 +54,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5em;
-    font-size:13px; 
+    font-size:11px; 
     /*color:#00eeee;*/
     /*width:100;*/
 

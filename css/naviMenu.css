@@ -7,8 +7,8 @@
 
 	position:fixed;
 	display:block;
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	/*margin:10px;*/
 	text-align:center;
 	-webkit-border-radius:50%;
@@ -18,7 +18,7 @@
     color:#f6f062;
     font-family: 'Lato', sans-serif;
     font-size:24px;
-    line-height:80px;
+    line-height:70px;
     vertical-align:middle;
     text-decoration:none; 
     opacity: 50%;
@@ -53,12 +53,12 @@
 
 	color:#fff;
 	text-decoration:none;
-	width:60px;
-	height:60px;
+	width:55px;
+	height:55px;
 	-webkit-border-radius:50%;
 	border-radius:50%;
 	background: #8c1aff;
-	line-height:60px;
+	line-height:55px;
 	display:block;
 
 }
