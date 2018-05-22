@@ -27,8 +27,8 @@ var selected = [];
 function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
- //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-  table = loadTable('circadian.csv', 'csv', 'header');
+ table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
+  //table = loadTable('circadian.csv', 'csv', 'header');
   
 }
 
@@ -96,7 +96,8 @@ img = loadImage("Star_Const.png");
 
 
 
-   r = 325;
+   r = 500;
+   //r = height/3;
    theta = -1.5;
 
 
@@ -115,9 +116,9 @@ function draw() {
       fill(255, 255, 255);
       text('DAYTIME/NIGHTIME(Length of Darkness)', 60, 30, 300, 200);
       textFont('Courier-Bold', 32);
-            text('TIME: ' + table.getString(r1, 0), 640, 660, 360, 200);
+            text('TIME: ' + table.getString(r1, 0), width*.45, height*.7, 360, 200);
       textFont('Courier-Bold', 32);
-      text('PLACE: London', 1050, 660, 360, 200);
+      text('PLACE: London', width*.45, height*.8, 360, 200);
       text('SUBJECT: Male', 1300, 10, 360, 200);
       textFont('Courier-Bold', 14);
       text('LIGHT-SQM READING as Brightness Clock', 550, 250, 100, 200); 
@@ -146,8 +147,8 @@ function draw() {
         push();
         //fill(0, 102, 153);
         fill(255);
-         text('SYSTOLIC BP', 470, 280, 200, 300); 
-         text(table.getString(r1, 1), 470, 290, 100, 300); 
+         text('SYSTOLIC BP', width/4, height/4, 300, 300); 
+         text(table.getString(r1, 1), width/3, height/4, 100, 300); 
 
 
          pop();
@@ -165,7 +166,7 @@ function draw() {
                  strokeWeight(3);
            stroke(246, 240, 98);
           //text('TEST', x4+500, y4+100, 100, 200); 
-          vertex(x4+630, y4+290);
+          vertex(x4+(width/4), y4+(height/3));
 
         }
         endShape();
@@ -179,8 +180,8 @@ function draw() {
                 push();
        fill(255);
        strokeWeight(1);
-         text('DIASTOLIC BP', 470, 450, 200, 300); 
-        text(table.getString(r1, 2), 470, 470, 100, 300); 
+         text('DIASTOLIC BP', width/4, height*.45, 200, 300); 
+        text(table.getString(r1, 2), width/3, height*.45, 100, 300); 
          
 
          pop();
@@ -199,7 +200,7 @@ function draw() {
           y4 = sin(x4*frequency3+phi)* amplitude;
            strokeWeight(3);
            stroke(246, 240, 98);
-          vertex(x4+630, y4+500);
+         vertex(x4+(width/4), y4+(height*.55));
 
         }
         endShape();
@@ -215,8 +216,8 @@ function draw() {
                 push();
         fill(255);
         strokeWeight(.5);
-         text('HEART RATE', 470, 80, 200, 300); 
-         text(table.getString(r1, 3), 470, 120, 100, 300); 
+         text('HEART RATE', width/4, height*.08, 200, 300); 
+         text(table.getString(r1, 3),  width/3, height*.08, 100, 300); 
          pop();
         // if we consider 1 pixel to be 1 radian, then this is the number 
         // of radians between points
@@ -232,7 +233,7 @@ function draw() {
           // y is determined by our function
           y4 = sin(x4*frequency4+phi)* amplitude;
            stroke(246, 240, 98);
-          vertex(x4+630, y4+100);
+          vertex(x4+(width/4), y4+(height/6));
 
         }
         endShape();
@@ -293,7 +294,10 @@ push();
   stroke(255);
   strokeWeight(4);
   //ellipse(500, 500, 16, 16);
-  ellipse(x+width/2, y+height/3, 16, 16);
+  //ellipse(x+(width*.42), y+(height*.42), 16, 16);
+
+  ellipse(x, y, 16, 16);
+  
   //print("x" + x);
   //print("y" + y);
   noStroke();
@@ -523,7 +527,8 @@ function Pendulum(origin_, r_) {
     stroke(255);
     strokeWeight(2);
     // Draw the arm
-    line(this.origin.x-700, this.origin.y+80, this.position.x-700, this.position.y+100);
+    //line(this.origin.x-(width*.40), this.origin.y+(height*.09), this.position.x-(width*.40), this.position.y+(height*.022));
+    line(this.origin.x-500, this.origin.y+50, this.position.x-500, this.position.y+50);
     //ellipseMode(CENTER);
     noStroke();
     strokeWeight(1);
@@ -539,8 +544,8 @@ push();
     fill(246, 240, 98);
 
 
-  star(this.position.x-700, this.position.y+100, 80, 100, 40); 
-      ellipse(this.position.x-700, this.position.y+100, this.ballr+100, this.ballr+100);
+  star(this.position.x-500, this.position.y+50, 80, 60, 40); 
+      ellipse(this.position.x-500, this.position.y+50, this.ballr+60, this.ballr+60);
 
   pop();
 
@@ -549,11 +554,11 @@ push();
 
     push();
     fill(255, 255, 255);
-     ellipse(this.position.x-700, this.position.y+100, this.ballr+100, this.ballr+100);
+     ellipse(this.position.x-500, this.position.y+50, this.ballr+60, this.ballr+60);
      //noFill();
      noStroke();
      fill(0);
-     ellipse(this.position.x-650, this.position.y+90, this.ballr+100, this.ballr+100);
+     ellipse(this.position.x-450, this.position.y+40, this.ballr+60, this.ballr+60);
 
 
       pop();
@@ -562,7 +567,8 @@ push();
   push();
   translate(width*0.08, height*0.05);
   //rotate(frameCount / -100.0);
-  star(this.position-(width*.07), this.position.y-(height*0.05), 20, 50, 5); 
+  //star
+  //star(this.position-500, this.position.y+50, 20, 50, 5); 
   pop();
     }
     pop();  
