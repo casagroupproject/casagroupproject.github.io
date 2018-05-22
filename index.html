@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
       <script src='jquery.min.js'></script>
       <script src='three.min.js'></script>
         <title>GroupProjectPrototype</title>
@@ -46,10 +48,13 @@
     z-index:10;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-
-
+    /*color: white;*/
 }
+
+.bulb :hover {
+    color: red;
+    background-color: transparent;
+cursor:pointer;
 
         </style>
 
@@ -61,8 +66,11 @@
            <div id="typedtext"></div>
         </div>
 
+         <a id='start-icon'  href="index0.html"><div style="font-size:4em; color:#f6f062">
+  <i class="far fa-lightbulb" id='bulb'></i>
+</div>
 
-         <a id='start-icon' href="index0.html">Explore</a>
+</a>
         </body>
 
 
@@ -174,11 +182,10 @@ var Stats = function () {
 //typeWriter effect
 // adding our intro text
 var aText = new Array(
-"Here we put the aim of the visualisation",
-"or any potential slogan/punchline", 
-"to help the audience have a quick overview",
-"about our visualisad storytelling",
-"..."
+    "Imaging Pulse as the rhythmical interaction of light,", 
+    "darkness and social network activity by exploring",
+    "the effect of natural and anthropogenic light sources",
+    " on sleep quality and well-being..."
 );
 
 
