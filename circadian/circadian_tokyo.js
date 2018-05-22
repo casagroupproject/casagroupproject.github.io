@@ -28,7 +28,12 @@ function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
  //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-  table = loadTable('circadian.csv', 'csv', 'header');
+table = loadTable('circadian.csv', 'csv', 'header');
+
+  //font_bold = loadFont('http://0.0.0.0:8000/Inconsolata-Bold.ttf')
+  //font = loadFont('http://0.0.0.0:8000/Inconsolata-Bold.ttf')
+  font = loadFont('Inconsolata-Regular.ttf')
+  font_bold = loadFont('Inconsolata-Bold.ttf')
   
 }
 
@@ -51,7 +56,9 @@ img = loadImage("Star_Const.png");
     }
 
 
-    textFont('Courier-Bold', 14);
+    
+
+    textFont(font, 14);
 
   // Make a new Pendulum with an origin position and armlength
   p = new Pendulum(createVector(width/2,0),175);
@@ -110,22 +117,22 @@ time = 0;
 
 function draw() {
   //wave background
-  background(0,0,0);
+  background(0);
      image(img, width*.85,  height*.05, img.width/3, img.height/3);
 
       push();
       fill(255, 255, 255);
       text('DAYTIME/NIGHTIME(Length of Darkness)', width*0.02, 30, 300, 200);
-      textFont('Courier-Bold', 26);
+      textFont(font_bold, 26);
   fill(178, 143, 206);
             text('Circadian Clock', width*0.25, 20, 300, 200);
-      textFont('Courier-Bold', 20);
+      textFont(font, 20);
       fill(255, 255, 255);
             text('TIME: ' + table.getString(r1, 0), width*.55, height*.8, 360, 200);
-      textFont('Courier-Bold', 20);
+      textFont(font, 20);
       text('PLACE: Tokyo', width*.55, height*.85, 360, 200);
       text('SUBJECT: Male', width*.7, height*.015, 320, 200);
-      textFont('Courier-Bold', 14);
+      textFont(font, 14);
       text('LIGHT-SQM READING as Brightness Clock',  width*.35, height*.6, 100, 200); 
              fill(255);
          strokeWeight(.5);
@@ -315,7 +322,7 @@ push();
         fill(255);
         strokeWeight(.5);
         //noStroke();
-         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.02, height*0.75, 450, 400); 
+         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.02, height*0.89, 450, 400); 
          //text('Freq= '+freq, 60, 730, 300, 400); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
          pop();
@@ -329,7 +336,7 @@ push();
   for (var i = 0; i < waveform.length; i++){
     var x = map(i, 0, waveform.length, 0, width/3);
     var y = map(waveform[i], -1, 1, height/8, 0);
-    vertex(width*0.02+x, height*0.8+y);
+    vertex(width*0.02+x, height*0.75+y);
   }
   endShape();
      noStroke();
@@ -365,7 +372,7 @@ push();
        push();
 
         fill(255);
-        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, width*0.02, width*0.23, width*0.35, 200); 
+        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, width*0.02, width*0.26, width*0.35, 190); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
 
 
