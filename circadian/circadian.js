@@ -34,14 +34,14 @@ function preload() {
 
 function setup() {
 
-  //frameRate(60);
+  frameRate(45);
   createCanvas(windowWidth, windowHeight);
   //createCanvas(windowWidth, windowHeight);
 //img = loadImage("http://0.0.0.0:8000/Star_Const.png");
 img = loadImage("Star_Const.png");
 
 //createCanvas(800, 400)
-  spacing = 60;
+  spacing = 30;
   selected.length = 5; 
     
     for(var i =0; i<selected.length; i++)
@@ -75,7 +75,7 @@ img = loadImage("Star_Const.png");
   osc = new p5.Oscillator();
   osc.setType('sine');
   osc.freq(110);
-  osc.amp(0.5);
+  osc.amp(0.2);
   osc.disconnect();
   osc.connect(filt);
   osc.connect();
@@ -96,7 +96,8 @@ img = loadImage("Star_Const.png");
 
 
 
-   r = 500;
+   //r = 500;
+   r = 250;
    //r = height/3;
    theta = -1.5;
 
@@ -296,7 +297,7 @@ push();
   //ellipse(500, 500, 16, 16);
   //ellipse(x+(width*.42), y+(height*.42), 16, 16);
 
-  ellipse(x, y, 16, 16);
+  ellipse(x + width/2, y+ height/3, 16, 16);
   
   //print("x" + x);
   //print("y" + y);
@@ -328,7 +329,7 @@ push();
   }
   endShape();
      noStroke();
-       if(frameCount%12==1)
+       if(frameCount%13==1)
         {
           r1=(r1+1)%49;
           //print(r1);
@@ -595,5 +596,4 @@ function star(x, y, radius1, radius2, npoints) {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
-
 
