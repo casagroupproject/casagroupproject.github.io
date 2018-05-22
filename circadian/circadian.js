@@ -41,7 +41,7 @@ function setup() {
 img = loadImage("Star_Const.png");
 
 //createCanvas(800, 400)
-  spacing = 30;
+  spacing = width*0.05;
   selected.length = 5; 
     
     for(var i =0; i<selected.length; i++)
