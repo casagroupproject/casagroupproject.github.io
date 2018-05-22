@@ -36,6 +36,7 @@ function setup() {
 
   //frameRate(60);
   createCanvas(windowWidth, windowHeight);
+  //createCanvas(windowWidth, windowHeight);
 //img = loadImage("http://0.0.0.0:8000/Star_Const.png");
 img = loadImage("Star_Const.png");
 
@@ -108,7 +109,7 @@ time = 0;
 function draw() {
   //wave background
   background(0,0,0);
-     image(img,1600, 50, img.width/2, img.height/2);
+     image(img, width*.85,  height*.05, img.width/2, img.height/2);
 
       push();
       fill(255, 255, 255);
@@ -244,7 +245,7 @@ function draw() {
  
 //fill(count4, count3, count2);
    fill(178, count4, 242);
-ellipse(0, 0, 450, 450);
+ellipse(0, 0, width*.25, width*.25);
 push();
   for(var i = 0; i < 360; i+=2){
     var x_w = cos(radians(i)) * 50;
@@ -260,7 +261,7 @@ push();
     //fill(count4, count3, count2+30);
    fill(178, count4 , 242-count2);
 
-    ellipse(x_w, y_w, w_w, w_w);
+    //ellipse(x_w, y_w, w_w, w_w);
 
   }
   time++;
@@ -305,7 +306,7 @@ push();
         fill(255);
         strokeWeight(.5);
         //noStroke();
-         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', 60, 750, 450, 400); 
+         text('TWITTER MOOD applied as Low Pass Filter to Audio File and Wave Analysed with FFT', width*0.03, height*0.75, 450, 400); 
          //text('Freq= '+freq, 60, 730, 300, 400); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
          pop();
@@ -319,7 +320,7 @@ push();
   for (var i = 0; i < waveform.length; i++){
     var x = map(i, 0, waveform.length, 0, width/3);
     var y = map(waveform[i], -1, 1, height/8, 0);
-    vertex(60+x, 800  +y);
+    vertex(width*0.02+x, height*0.8+y);
   }
   endShape();
      noStroke();
@@ -355,7 +356,7 @@ push();
        push();
 
         fill(255);
-        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, 60, 450, 350, 400); 
+        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, 60, width*0.23, width*0.25, 100); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
 
 
@@ -369,40 +370,40 @@ push();
  
 
           stroke(204, 0, 0);
-          scribble.scribbleRoundedRect(80, 590,  anger_count/8, anger_count/8, 400);
+          scribble.scribbleRoundedRect(width*0.03, height*0.6,  anger_count/8, anger_count/8, 400);
           strokeWeight(1); 
           fill(255);
-          text("Anger",60, 660);
+          text("Anger",width*0.02,height*0.7);
           strokeWeight(9);
           noFill();
          stroke(255, 128, 0);
-        scribble.scribbleEllipse( 150, 590, joy_count/8, joy_count/8);
+        scribble.scribbleEllipse( width*0.07, height*0.6, joy_count/8, joy_count/8);
          strokeWeight(1); 
           fill(255);
-          text("Joy",130, 660);
+          text("Joy",width*0.07,height*0.7);
          //fill(255, 153, 153);
          strokeWeight(5);
          stroke(0, 51, 102);
-        scribble.scribbleRect(220, 590, sadness_count/8, sadness_count/8);
+        scribble.scribbleRect(width*0.11, height*0.6, sadness_count/8, sadness_count/8);
           strokeWeight(1); 
           fill(255);
-          text("Sad",200, 660);
+          text("Sad",width*0.10,height*0.7);
           strokeWeight(2);
          stroke(192, 192, 192);
          //fill(192, 192, 192);
          strokeWeight(1); 
          noFill();
-        ellipse( 300, 590, unknown_count/8, unknown_count/8);
+        ellipse( width*0.15, height*0.6, unknown_count/8, unknown_count/8);
         fill(255);
         noStroke();
         fill(102, 0, 102);
-         ellipse( 390, 590, 50, 50);
+         ellipse( width*0.21, height*0.6, 50, 50);
          strokeWeight(1); 
           fill(255);
-          text("Unknown",270, 660);
+          text("Unknown",width*0.14,height*0.7);
           strokeWeight(1); 
           fill(255);
-          text("Sound On/Off",390, 650);
+          text("Sound On/Off",width*0.21,height*0.7);
 
        pop();
 
@@ -442,7 +443,7 @@ pop();
         if(selected[i]){
            fill(150,150,255) 
            //point(70+ i*spacing, 480, 100);
-           text("On", 70+ i*spacing, 520)
+           text("On", (width*.02)+ i*spacing, height*.55)
 
 
            if(selected[4]==true){
@@ -561,7 +562,7 @@ push();
   push();
   translate(width*0.08, height*0.05);
   //rotate(frameCount / -100.0);
-  star(this.position.x-700, this.position.y-40, 20, 50, 5); 
+  star(this.position-(width*.07), this.position.y-(height*0.05), 20, 50, 5); 
   pop();
     }
     pop();  
