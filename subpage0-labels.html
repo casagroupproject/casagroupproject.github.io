@@ -9,23 +9,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>city portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -101,43 +84,49 @@
    			width: 100%;
 		}
 
+		.title2 {
+		z-index: 999;
+	/*	display:flex;*/
+		position: absolute;
+		text-align:left;
+		float:left;
+		margin-top: 4em;
+		}
 
 
-		/*** Works on common browsers ***/
-::selection {
-    background-color: #fdf894;
-    color: white;
-}
+			/*** Works on common browsers ***/
+	::selection {
+	    background-color: #fdf894;
+	    color: white;
+	}
 
-/*** Mozilla based browsers ***/
-::-moz-selection {
-    background-color: #fdf894;
-    color: white;
-}
+	/*** Mozilla based browsers ***/
+	::-moz-selection {
+	    background-color: #fdf894;
+	    color: white;
+	}
 
-/***For Other Browsers ***/
-::-o-selection {
-    background-color: #fdf894;
-    color: white;
-}
+	/***For Other Browsers ***/
+	::-o-selection {
+	    background-color: #fdf894;
+	    color: white;
+	}
 
-::-ms-selection {
-    background-color: #fdf894;
-    color: white;
-}
+	::-ms-selection {
+	    background-color: #fdf894;
+	    color: white;
+	}
 
-/*** For Webkit ***/
-::-webkit-selection {
-    background-color: #fdf894;
-    color: white;
-}
+	/*** For Webkit ***/
+	::-webkit-selection {
+	    background-color: #fdf894;
+	    color: white;
+	}
 
-
-.text-label {
-  color: #fff;
-  font-family: "Fira Mono", Monaco, "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-  margin: -5px 0 0 15px;
-  pointer-events:none;
+.vl {
+    border-left: 1px solid white;
+    height: 30px;
+    padding-left: 1px;
 }
 
 	</style>
@@ -147,63 +136,86 @@
 
 	<body style="background-color:black">
 		
-	
-	<canvas id="c"></canvas>
-
-	<!-- <div id="fh5co-main" style="background-color:black"> -->
-	<!-- 	<div class="fh5co-intro text-center">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-8 col-md-offset-2">
-						<h1 class="intro-lead">Make something you love</h1>
-						<h3 id="typedtext"></h3>
-					</div>
-				</div>
-			</div>
-		</div> -->
+		<canvas id="c"></canvas>
 
 		<div id="fh5co-portfolio" style="background-color:black">
-			<div class="fh5co-portfolio-item ">
+			<div class="fh5co-portfolio-item fh5co-img-right ">
 				<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless Tokyo</h2>
+					<h5>Total population: 38'305'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;">explore more</h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
 			<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless London</h2>
+					<h5>Total population: 10'657'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5>explore more</h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
-			<div class="fh5co-portfolio-item ">
+			<div class="fh5co-portfolio-item fh5co-img-right">
 			<!-- 	<div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless Delhi</h2>
+					<h5>Total population: 27'928'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5>explore more</h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
 				<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless Stockholm</h2>
+					<h5>Total population: 1'550'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5>explore more</h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
+				</div>
+			</div>
+			<div class="fh5co-portfolio-item fh5co-img-right">
+				<!-- <div class="fh5co-portfolio-figure"></div> -->
+				<div class="fh5co-portfolio-description">
+					<h2>Sleepless New York City</h2>
+					<h5>Total population: 8'580'015</h5>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
+				</div>
+			</div>
+				<div class="fh5co-portfolio-item fh5co-img-right">
+				<!-- <div class="fh5co-portfolio-figure"></div> -->
+				<div class="fh5co-portfolio-description">
+					<h2>Sleepless Sydney</h2>
+					<h5>Total population: 4'626'000</h5>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<h6>Twitter counts May 2016</h6>
+					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 		</div>
 
 		<script id="template" type="notjs">
+			<div class="title2"> <h4>Light density: $</h4> </div>
 			<div class="scene"></div>
+			// <div class="description">Scene $</div>
+		</script>
+
+		<script id="labelz" type="notjs">
+			$
+			<hr>
 			// <div class="description">Scene $</div>
 		</script>
 
@@ -212,6 +224,10 @@
 			var canvas;
 
 			var scenes = [],renderer;
+
+			var objArr = [];
+
+			var dens =['23','34','65','78','38','40'];
 
 			//external geometires
 			var models = {
@@ -234,12 +250,18 @@
 			    obj: "./assets/test.stl",
 			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
 			    mesh: null
+			  },
+			   model5: {
+			    obj: "./assets/test.stl",
+			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
+			    mesh: null
+			  },
+			   model6: {
+			    obj: "./assets/test.stl",
+			    // mtl: "https://casagroupproject.github.io/template1/assets/Tent_Poles_01.mtl",
+			    mesh: null
 			  }
 			}
-
-			// Meshes index
-			//var meshes = {};
-
 
 			init();
 			animate();
@@ -249,22 +271,20 @@
 			  canvas = document.getElementById("c");
 			  //create array of internal geometries:
 			  var template = document.getElementById("template").text;
+			  var labelz = document.getElementById("labelz").text;
 			  
 			  console.log('template-text',template);
+			  console.log('label',labelz);
 
-			//left row (div)
-			  var content = document.getElementsByClassName("fh5co-portfolio-item");
-			//right row (div)
-			  var content2 = document.getElementsByClassName("fh5co-portfolio-item fh5co-img-right");
-
-
+			//get all divs
 			  var allElements = document.querySelectorAll('.fh5co-portfolio-item');
-			  console.log('querySelectorAll',allElements[1]);
-			  console.log('are these all elements',content2);
+			  //console.log('querySelectorAll',allElements[1]);
+				
 			  
 			  var objLoader = new THREE.STLLoader();
 			  var counter = 0;
 
+//-------------------the mighty loop-----------------------------
 			  for (var _key in models) {
 			    console.log('key first', _key);
 
@@ -277,43 +297,39 @@
 			    var axes = new THREE.AxisHelper(100);
     			scene.add(axes);
 
-				//left div
+				//all divs
 			    let element = document.createElement("div");
 			    element.className = "fh5co-portfolio-figure";
-			    element.innerHTML = template;
-			    console.log('tempate replace', template);
-
-				//create density count
-			    let elementText = document.createElement("div");
-			    elementText.className = "fh5co-portfolio-figure";
-			    elementText.innerHTML = template2;
+			    //console.log('tempate replace', template);
 
 			    //console.log('entire element', element);
 			    //console.log('entire row', content);
 
-			    scene.userData.element = element.querySelector(".scene");
 
 			    ///console.log(element.querySelector(".scene"));
 
-//if counter is 0 append left div, if counter is 1 append right div:
+				//if counter is 0 append left div, if counter is 1 append right div:
 				//console.log('countermodulo', counter%2==0);
-			if (counter%2==0){
-				//console.log(element);
-			    allElements[counter].appendChild(element);
-			} else {
-				allElements[counter].appendChild(element);
-			}
+				//if (counter%2==0){
+					//console.log(element);
+				    allElements[counter].appendChild(element);
+				   element.innerHTML = template.replace('$', dens[counter]);
+				// } else {
+				// 	allElements[counter].appendChild(element);
+				// 	element.innerHTML = template.replace('$', dens[counter]);
+				// }
+
+				let sceneElement = element.querySelector(".scene");
+			    scene.userData.element = element.querySelector(".scene");
 
 
-			    // let camera = new THREE.PerspectiveCamera(50, 1, 1, 10);
-			    // camera.position.z = 2;
-			   
 
+//-------------------camera-----------------------------
 			    let camera = new THREE.OrthographicCamera(
 				    allElements[counter].clientWidth / -10, // frustum left plane
 				    allElements[counter].clientWidth / 10, // frustum right plane.
 				    allElements[counter].clientHeight / 10, // frustum top plane.
-				    allElements[counter].clientHeight/ -10, // frustum bottom plane. 
+				    allElements[counter].clientHeight/ -13, // frustum bottom plane. 
 				    -500, // frustum near plane.
 				    500 // frustum far plane.
 				);
@@ -323,16 +339,9 @@
 
 				camera.position.x = 80;
 				camera.position.z = 80;
-				camera.position.y = 40;
+				camera.position.y = 35;
 
 				scene.userData.camera = camera;
-
-//-------------------element to add label to -----------------------------
-				var geometry = new THREE.BoxBufferGeometry( 1, 1, 1);
-				var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
-				var cube = new THREE.Mesh( geometry, material );
-				cube.position.set(64,0,64);
-				scene.add( cube );
 
 //-------------------controls-----------------------------
 			    let controls = new THREE.OrbitControls(scene.userData.camera, scene.userData.element);
@@ -341,21 +350,95 @@
 			    controls.enablePan = true;
 			    controls.enableZoom = true;
 			    scene.userData.controls = controls;
+			    controls.addEventListener('change', function() {
+			        onCameraChange();
+			        console.log('onCameraChange');
+			    });
 
-			  //   objLoader.load(
-			  //     // resource URL
-			  //     models[_key].obj,
-			  //     // called when resource is loaded
-			  //     function(object) {
-					// console.log('key second', _key);
-			  //       scene.add(object);
-			  //       console.log(object);
+			  //-------------------element to add label to -----------------------------
+		function onCameraChange()
+			{
+			    objArr.forEach(function(objData) {
+			        
+			        var proj = toScreenPosition(objData.divObj, camera);
+			        console.log('hello?');   
+			        
+			        objData.divElem.style.left = proj.x + 'px';
+			        objData.divElem.style.top = proj.y + 'px'; 
+			        console.log('positionchange', objData.divElem.style.left);       
+			        
+			    });
+			}
 
-			  //     }
-			  //   );
+
+			function toScreenPosition(obj, camera)
+			{
+			    
+			    var vector = new THREE.Vector3();
+			    
+			    // TODO: need to update this when resize window
+			    var widthHalf = 0.5*element.clientHeight;
+			    var heightHalf = 0.5*element.clientHeight;
+			    //console.log('renderer.context.canvas.height',renderer.context.canvas.height);
+			    //console.log('renderer.context.canvas.height',element.clientHeight);
+
+			    obj.updateMatrixWorld();
+			    vector.setFromMatrixPosition(obj.matrixWorld);
+			    vector.project(camera);
+			    
+			    vector.x = ( vector.x * widthHalf ) + widthHalf;
+			    vector.y = - ( vector.y * heightHalf ) + heightHalf;
+			    
+			    return { 
+			        x: vector.x,
+			        y: vector.y
+			    };
+
+			}
+
+				let coords = [[75,0],[0,75],[-75,0],[0,-75]];
+				let dirs = ['N','E','W','S'];
+			
+			    for (var i=0; i<4; i++){
+			    let sphereGeo = new THREE.SphereGeometry(1, 1, 1);
+        		let sphereMesh = new THREE.Mesh(sphereGeo);
+        		console.log('coordinates', coords[i][0]);
+
+        		//sphereMesh.position.set(20, 0, 20);
+        		sphereMesh.position.set(coords[i][0],1,coords[i][1]);
+
+        
+        		scene.add(sphereMesh);
+				//sphereMesh.updateMatrix();
+
+
+				let divElem = document.createElement('div');
+			    divElem.style.position = 'absolute';
+			    divElem.style.color = 'white';
+			    //divElem.innerHTML = '$';
+			    divElem.innerHTML = dirs[i]+'<div class="vl"></div>';
+			    sceneElement.appendChild(divElem);
+			    let divObj = new THREE.Object3D();
+			    divObj.position = sphereGeo.vertices[0].clone();
+			    console.log(sphereGeo.vertices[0].clone());
+			    console.log(sphereGeo.vertices);
+			    sphereMesh.add(divObj);
+			        
+			 	let objData = {
+			            mesh: sphereMesh,
+			            divElem: divElem,
+			            divObj: divObj
+			        };
+			        objArr.push(objData);
+		
+      			}
+
+
+//-------------------STL loader-----------------------------
 			  objLoader.load(models[_key].obj, function ( geometry ) {
 
 			                    // material = new THREE.MeshPhongMaterial( { color: 0xfdf894, specular: 0x111111, shininess: 200 } );
+			                    console.log('test', geometry.attributes.position.count);
 			                    material = new THREE.MeshNormalMaterial();
 			                    mesh = new THREE.Mesh( geometry, material );
 			                    //pos1:moves to the right if positive. pos2: goes up if positive, down if neg
@@ -371,24 +454,24 @@
 			                    scene.add( mesh );
 			                    //camera.lookAt(mesh.position);
 			                 //get size of object
-			           			var box = new THREE.Box3().setFromObject(mesh);
-			     				 //console.log( box.min, box.max, box.getSize() );
-			      				//console.log(mesh.position);
+			           var box = new THREE.Box3().setFromObject(mesh);
+			      //console.log( box.min, box.max, box.getSize() );
+			      //console.log(mesh.position);
 
 			                } );
 
-
+//-------------------some lights-----------------------------
 			    scene.add(new THREE.HemisphereLight(0xaaaaaa, 0x444444));
 
 			    var light = new THREE.DirectionalLight(0xffffff, 0.5);
-			    light.position.set(1, 1, 1);
+			    light.position.set(70, 20, 0);
 			    scene.add(light);
 			    //console.log('scene number', scene);
 			    scenes.push(scene);
 			    counter ++;
 
 			  }
-
+//-------------------renderer-----------------------------
 			  renderer = new THREE.WebGLRenderer({
 			    canvas: canvas,
 			    antialias: true
