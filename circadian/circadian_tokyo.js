@@ -130,7 +130,7 @@ function draw() {
       fill(255, 255, 255);
             text('TIME: ' + table.getString(r1, 0), width*.55, height*.8, 360, 200);
       textFont(font, 20);
-      text('PLACE: London', width*.55, height*.85, 360, 200);
+      text('PLACE: Tokyo', width*.55, height*.85, 360, 200);
       text('SUBJECT: Male', width*.7, height*.015, 320, 200);
       textFont(font, 14);
       text('LIGHT-SQM READING as Brightness Clock',  width*.35, height*.6, 100, 200); 
