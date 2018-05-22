@@ -43,7 +43,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //createCanvas(windowWidth, windowHeight);
 //img = loadImage("http://0.0.0.0:8000/Star_Const.png");
-img = loadImage("Star_Const.png");
+img = loadImage("circadian/Star_Const.png");
 
 //createCanvas(800, 400)
   spacing = width*0.05;
