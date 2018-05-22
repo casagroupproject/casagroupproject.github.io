@@ -28,12 +28,12 @@ function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
  //table = loadTable('http://0.0.0.0:8000/circadian.csv', 'csv', 'header');
-table = loadTable('circadian.csv', 'csv', 'header');
+table = loadTable('circadian/circadian.csv', 'csv', 'header');
 
   //font_bold = loadFont('http://0.0.0.0:8000/Inconsolata-Bold.ttf')
   //font = loadFont('http://0.0.0.0:8000/Inconsolata-Bold.ttf')
-  font = loadFont('Inconsolata-Regular.ttf')
-  font_bold = loadFont('Inconsolata-Bold.ttf')
+  font = loadFont('circadian/Inconsolata-Regular.ttf')
+  font_bold = loadFont('circadian/Inconsolata-Bold.ttf')
   
 }
 
