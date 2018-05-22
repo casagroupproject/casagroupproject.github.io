@@ -134,14 +134,14 @@
 		<canvas id="c"></canvas>
 
 		<div id="fh5co-portfolio" style="background-color:black">
-			<div class="fh5co-portfolio-item ">
+			<div class="fh5co-portfolio-item fh5co-img-right ">
 				<!-- <div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless Tokyo</h2>
 					<h5>Total population: 38'305'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
@@ -151,17 +151,17 @@
 					<h5>Total population: 10'657'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
-			<div class="fh5co-portfolio-item ">
+			<div class="fh5co-portfolio-item fh5co-img-right">
 			<!-- 	<div class="fh5co-portfolio-figure"></div> -->
 				<div class="fh5co-portfolio-description">
 					<h2>Sleepless Delhi</h2>
 					<h5>Total population: 27'928'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
@@ -171,7 +171,7 @@
 					<h5>Total population: 1'550'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 			<div class="fh5co-portfolio-item fh5co-img-right">
@@ -181,7 +181,7 @@
 					<h5>Total population: 8'580'015</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 				<div class="fh5co-portfolio-item fh5co-img-right">
@@ -191,7 +191,7 @@
 					<h5>Total population: 4'626'000</h5>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 					<canvas class='processing' data-processing-sources="./assets/tokyo.pde"></canvas>
-					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">explore more</a> </h5>
+					<h5 style="padding-top:1em;"> <a href="http://casagroupproject.github.io">Explore more Data</a> </h5>
 				</div>
 			</div>
 		</div>
@@ -263,6 +263,7 @@
 			  var objLoader = new THREE.STLLoader();
 			  var counter = 0;
 
+//-------------------the mighty loop-----------------------------
 			  for (var _key in models) {
 			    console.log('key first', _key);
 
@@ -288,14 +289,14 @@
 
 				//if counter is 0 append left div, if counter is 1 append right div:
 				//console.log('countermodulo', counter%2==0);
-				if (counter%2==0){
+				//if (counter%2==0){
 					//console.log(element);
 				    allElements[counter].appendChild(element);
 				   element.innerHTML = template.replace('$', dens[counter]);
-				} else {
-					allElements[counter].appendChild(element);
-					element.innerHTML = template.replace('$', dens[counter]);
-				}
+				// } else {
+				// 	allElements[counter].appendChild(element);
+				// 	element.innerHTML = template.replace('$', dens[counter]);
+				// }
 
 			    scene.userData.element = element.querySelector(".scene");
 
