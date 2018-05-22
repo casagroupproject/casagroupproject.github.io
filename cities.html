@@ -302,6 +302,8 @@
 
 			    let scene = new THREE.Scene();
 			    scene.background = new THREE.Color('rgb(0, 0, 0)');
+			    fogColor = new THREE.Color(0xf6f062);
+				scene.fog = new THREE.Fog(fogColor, 0.0025, 20);
 
 			    //add helper axes
 			    // var axes = new THREE.AxisHelper(100);
@@ -336,7 +338,7 @@
 			    //let coords = [[75,0],[0,75],[-75,0],[0,-75]];
 				//let dirs = ['N','E','W','S'];
 
-				let coord = [60,0];
+				let coord = [0,90];
 
 			    //for (var i=0; i<4; i++){
 			    let sphereGeo = new THREE.SphereGeometry(0.1, 0.1, 0.1);
@@ -353,13 +355,13 @@
 
 
 				let divElem = document.createElement('div');
-			    divElem.style.left = '509px';
-			    divElem.style.top = '495px';
+			    divElem.style.left = '465px';
+			    divElem.style.top = '102px';
 			    divElem.style.position = 'absolute';
 			    divElem.style.color = 'white';
 			    //divElem.innerHTML = '$';
 			    //divElem.innerHTML = dirs[i]+'<div class="vl"></div>';
-			    divElem.innerHTML = '<h8>North</h8> <div class="vl"></div>';
+			    divElem.innerHTML = '<h8>South</h8> <div class="vl"></div>';
 			    scene.userData.element.appendChild(divElem);
 			    divObj.position = sphereGeo.vertices[0].clone();
 			    //console.log(sphereGeo.vertices[0].clone());
