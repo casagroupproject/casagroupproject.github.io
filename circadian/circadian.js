@@ -362,8 +362,8 @@ push();
 
           freq = map(table.getString(r1, 1), 0, width, 20, 10000);
           //osc.freq(freq/2);
-          osc.freq(random(255));
-
+          //osc.freq(random(255));
+          osc.freq(anger_count);
           //print(count2);
 
 
@@ -372,7 +372,7 @@ push();
        push();
 
         fill(255);
-        text('TWITTER MOOD COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, width*0.02, width*0.26, width*0.35, 190); 
+        text('TWITTER MOO0D COUNT as Colour and Size. Dominant Mood=' + tweet_mood_word + '. Count=' + tweet_count, width*0.02, width*0.26, width*0.35, 190); 
          //text(table.getString(r1, 1), 350, 70, 100, 300); 
 
 
