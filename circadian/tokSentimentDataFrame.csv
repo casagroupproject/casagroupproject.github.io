@@ -1,0 +1,427 @@
+"","text","emotion","polarity.POS","polarity.NEG","polarity.POS.NEG","polarity.BEST_FIT"
+"1",NA,"unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"2","mp albums
+new releases in pop
+ sleep better
+tom middleton","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"3","mariah thought she suffered from a severe sleep disorder she would overwork herself out of fear of letting people down and gu","fear","1.03127774142571","35.1792261323723","0.0293149638239686","negative"
+"4","put your thoughts to sleep 
+do not let them cast a shadow over the moon of your heart 
+let go of thinking 
+
+r","fear","8.78232285939751","26.8423564950873","0.327181514819865","negative"
+"5","april 
+ nji woke up 
+time sleep duration h m s","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"6","april 
+ooxoo woke up 
+time sleep duration h m s","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"7","good night if you want to sleep have a nice dream","joy","33.4217525744328","0.445453222112551","75.0286470393703","positive"
+"8","april 
+ooxoo nocturnal awoke 
+time awake duration min","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"9","best sellers in doom metal
+ holy mountain sleep","unknown","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"10","my sleep analysis from to 
+via","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"11","takamaki san isn t it a little too late to still be in your sleep attire","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"12","sleep early tonight","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"13","april 
+ooxoo fell asleep 
+time sleep onset latency m s","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"14","i forreal have laid in bed for hours trying to sleep but my brain wouldn t let me until i ve decided on what to e","anger","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"15","legend says when you can t sleep at night it s because you re awake in someone else s","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"16","i said im going to finish this shit tonight but i keep changing the concept ughhhhhh will sleep nytz","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"17","april 
+ooxoo got into bed 
+time alarm set","anger","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"18","he also said i couldn t sleep it was so hard for me it s sugizo s fault we shoud use tag のせい lol you","unknown","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"19","mariah thought she suffered from a severe sleep disorder she would overwork herself out of fear of letting people","fear","1.03127774142571","35.1792261323723","0.0293149638239686","negative"
+"20","trans s cawaii may edition about suga and his love for sleep","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"21","trans 
+q what fashion items do you own the most 
+jm blue denim jackets hoodies and hooded clothes and long t shirts","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"22","is there some kinda secret on how to survive on hours of sleep every night","unknown","8.78232285939751","8.78232285939751","1","neutral"
+"23","i ve seen him sleep on an airplane and i can tell you that he ll be in a wheelchair in a few","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"24","bumping up the a few hours earlier tomorrow filming with the later in the day","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"25","how i sleep at night knowing i m seeing nct dream x this weekend","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"26","the sleep deprivation syndrome tokyo japan","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"27","soji i m not going to able to sleep if you look at me like that happy ending","joy","25.670707456461","0.445453222112551","57.6282899800754","positive"
+"28","keep pillow case clean i sleep on a face towel that i switch out a times a week","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"29","slept maybe hours wish i could sleep more i slept without my phone so it could charge","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"30","sleep good night","joy","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"31","brain stfu i wanna sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"32","if you never go to sleep you never have to get up","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"33","i added a video to a playlist","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"34","i liked a video","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"35","the brunette was also very comfortable he also had a small headache but it wasnt too bad 
+
+dazai yawn","joy","8.78232285939751","26.8423564950873","0.327181514819865","negative"
+"36","bulat
+
+the fact that her sleep pose is so niya made me feel weepy","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"37","it s so heart breaking that i can t sleep at night and i d drown in my own tears when will i ever be able to meet you","joy","33.4217525744328","8.78232285939751","3.80557093032283","positive"
+"38","don t sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"39","people who didn t play chain of memories birth by sleep and dream drop distance trying to understand kingdom hearts s","unknown","17.2265151579293","8.78232285939751","1.96149873259283","neutral"
+"40","they say this simple breathing technique can induce sleep in as fast as seconds if you have insomnia you might","unknown","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"41","it s and i m falling asleep i m a failure at fixing my sleep schedule","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"42","relaxing time sleep well","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"43","introduction nomikai this friday honestly i d prefer sleep","joy","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"44","more minutes of sleep that s all i ask but please don t start the countdown for another hours","joy","9.47547003995745","9.47547003995745","1","neutral"
+"45","when my kids say they cannot sleep i tell them you don t have to sleep if you pretend to sleep in your bed that s ok","anger","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"46","gonna barely get any sleep now","sadness","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"47","meanwhile here i am sleep under my blanket","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"48","go to sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"49","honestly just kinda annoyed with everyone so i guess i ll sleep","anger","17.9196623384892","9.47547003995745","1.89116342122587","neutral"
+"50","i can t sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"51","no sleep gang","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"52","hola marco buenos dias 
+you are right i m busy every day ω but it is so fun 
+i m going","unknown","8.78232285939751","17.8123396772424","0.493047124551418","negative"
+"53","anyway want to sleep ｰ","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"54","did you sleep slowly","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"55","i am so sleep deprived from these past few days i m starting to feel like i did at my old job oh no lol what the fyuck","joy","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"56","going to pick up smash bros switch at midnight on hours of sleep","joy","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"57","now i m very anxious about everything i can t sleep","fear","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"58","don t sleep on psn players now","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"59","prolly sleep lol","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"60","its weird how my gaming friend sleep earlier than me","joy","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"61","help make it happen for dreamlight the world s smartest sleep mask","unknown","25.670707456461","0.445453222112551","57.6282899800754","positive"
+"62","ahhhh i m so jetlagged i really should get some sleep","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"63","i m so sure i will not be able to concentrate on my work today when tonight","unknown","34.1148997549927","0.445453222112551","76.5846963530843","positive"
+"64","i m so sure i will not be able to concentrate on my work today when","unknown","34.1148997549927","0.445453222112551","76.5846963530843","positive"
+"65","today is still not the day when i ll finally sleep enough","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"66","sleep well xx","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"67","i force myself to let go of the things i don t have the skill or eye to fix now if it bothers me later th","unknown","8.78232285939751","17.8123396772424","0.493047124551418","negative"
+"68","h m of sleep logged april at am via fitbit","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"69","動画pickup slow jazz mix relaxing jazz piano music chill out cafe music for sleep study","fear","1.03127774142571","17.1191924966825","0.0602410272345239","negative"
+"70","can t sleep hahaha","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"71","i cant sleep huhu","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"72","can i sleep forever","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"73","sleep doesn t want me","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"74","lolz i had long break between it was that or sit on a park and sleep","unknown","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"75","alright it s time to sleep mina san 
+ oyasumi","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"76","hate that i m having so much fun here because i can t sleep at night because sleeping means one day closer to going","anger","1.03127774142571","18.5054868578024","0.0557282145209216","negative"
+"77","im crying so hard my head hurts hahaha
+maybe i should just go to sleep","unknown","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"78","i didn t sleep at all last night and i just woke up minutes ago i don t need this night owl life","unknown","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"79","i use spotify for sleep so instrumental music so now they take it as recommending tracks of bir","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"80","tell you what chris i need to sleep it s midnight in tokyo but i ll see if i can find the stud","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"81","dude i thought you were out i should be soon it s midnight need to sleep","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"82","i just had what could only be described as the best sleep of my life","unknown","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"83","arrived in vancouver jet lagged couldn t go to sleep started to read born a crime by totally fascinated and m","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"84","arrived in vancouver jet lagged couldn t go to sleep started to read born a crime by totally fasci","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"85","really tired today sleep was pretty rough ε","disgust","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"86","when my kids say they cannot sleep i tell them you don t have to sleep if you pretend to sleep in your bed that","anger","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"87","which countries get the most sleep 
+richer populations tend to be more well rested","sadness","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"88","google search i unconsciously picked my right pinky finger cuticles in my sleep until its bleeding and i have no idea why and how","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"89","i m finally getting sleepy let s sleep y all","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"90","what s wrong with me i can t sleep well recently whereas i m so tired hmmm i have no idea what i m gonna do","disgust","8.78232285939751","17.8123396772424","0.493047124551418","negative"
+"91","headaches that can t be cured by sleep are the worst kind ㅡ i m going to bang my head against a wall anytime now","joy","9.47547003995745","26.1492093145274","0.362361627305239","negative"
+"92","i wanna watch bigbang a concert in japan but i have to update my fanfics ahhh eotteokke can i just continue my sleep then","unknown","9.47547003995745","9.47547003995745","1","neutral"
+"93","sleep well last night i didn t think so now you know it too","unknown","25.670707456461","9.47547003995745","2.70917509613869","positive"
+"94","deep breaths the company want some me to start monday i have to fix my sleep schedule in a week wish me luck","unknown","26.3638546370209","8.78232285939751","3.00192273264133","positive"
+"95","currently running on hours of sleep within the past hours of those were spent on a plane","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"96","tip sleep on the yamanote line","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"97","i just wanna go back to sleep a musical","unknown","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"98","just only sleep after eat","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"99","i wanted to sleep in it","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"100","will i ever learn to sleep before i see the sun peak through my curtains probs not o","unknown","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"101","can t sleep fuck","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"102","please get out of my room i am trying to sleep","joy","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"103","i will jump on you when i get home so don t sleep guess his dad was working late","joy","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"104","fregrance is packed in one cabinet for me to smell when i miss u sound sleep and sweet lullaby i know u will ret","unknown","33.4217525744328","17.1191924966825","1.95229725823281","neutral"
+"105","sleep to wake up to sleep for another night","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"106","this night got really intense sleep be a challenge for sure 
+ε","unknown","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"107","thank you so much as always and i m happy for you i hope you did have your peaceful sleep alwa","joy","34.1148997549927","0.445453222112551","76.5846963530843","positive"
+"108","thank you lt sleep is high on my list of priorities right now v b","anger","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"109","and my oh my i said to myself sleep pulling me down the six flights to the street","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"110","it s alright juuzou i could hear you beside me when i was in my sleep you have grown into a proud y","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"111","get some shut eye which countries get the most sleep","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"112","band silverstein
+song smile in your sleep 
+album discovering the waterfront","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"113","so uhh after a restless night of way too little sleep i get to school early in the morning only to realize i misund","sadness","1.03127774142571","35.8723733129322","0.0287485227818457","negative"
+"114","at least they get to sleep on the train","sadness","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"115","goes back to sleep","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"116","oh well then wtf is sleep anyway","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"117","top ten reasons why i can t sleep at night by popa chubby","surprise","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"118","no sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"119","my sleep analysis on","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"120","these literally sleep with one eye open shinjuku","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"121","but now when i see her sometimes when i m trying to sleep i see her somewhere out on the edge of all this sprawl of cities and smoke","unknown","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"122","omg did you even sleep","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"123","actress momoko kikuchi says she couldn t sleep after stalker incident","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"124","sea of thieves s ocean is vast and beautiful and lifelike and it won t stop putting me to sleep","unknown","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"125","dreams can make you cry in your sleep wtf","unknown","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"126","not wanting to get scolded by boyfriend maybe a bit so he ll sleep 
+
+morniight","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"127","i ll try to sleep now","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"128","i ve been alive for a good minute but
+i m not really good at anything nor do i have extensive knowledge on much of","joy","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"129","april 
+ooxoo woke up 
+time sleep duration s","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"130","ughhh i can t sleep again","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"131","i cant sleep and it s almost am and i still have morning class today ughh camila s impact","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"132","oh man i woke up whereas i slept for hours i need to sleep more or i m gonna dying tomorrow but i m not sleepy anymore","unknown","1.03127774142571","17.1191924966825","0.0602410272345239","negative"
+"133","bitch go to sleep","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"134","i don t wanna sleep cause i don t wanna get up tomorrow morning","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"135","good sleep oyasumi
+rosso bird full album","joy","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"136","right on weekdays i m only home for a few hours before sleep and i don t want bright lights then weeke","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"137","i could not get a good night s sleep so i was moving so i could not reply easily i am sorry everyday i am too busy private","sadness","24.9775602759011","26.8423564950873","0.930527849910363","negative"
+"138","no i just sleep a lot","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"139","goodnight pals i hope i die in my sleep tonight","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"140","consumption of alcohol emotional disturbances and lack of sleep are all not conducive to repeatedly making correct decisions","unknown","16.5333679773693","18.5054868578024","0.893430586528906","negative"
+"141","consumption of alcohol emotional disturbances and lack of sleep are all not conducive to repeatedly making correc","unknown","8.78232285939751","18.5054868578024","0.474579400524914","negative"
+"142","have a good sleep on a","joy","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"143","i hate the smell of cigarettes when i m trying to sleep","anger","1.03127774142571","26.1492093145274","0.0394381997949273","negative"
+"144","when i was a child i couldn t sleep at night because i thought there was a monster in the closet  but","unknown","1.03127774142571","18.5054868578024","0.0557282145209216","negative"
+"145","if i ever make my own video game the way to cure the zombie undead status ailment would be to cast sleep on them a","sadness","17.9196623384892","35.1792261323723","0.509381936687895","negative"
+"146","i m very tired so i ll go to bed early i d like to sleep well","anger","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"147","when you wanna sleep the day away but you remember that the world will literally end on the next full moon","unknown","17.9196623384892","8.78232285939751","2.0404240000485","positive"
+"148","i sleep or am i just too lazy to put everything i ve drawn","unknown","9.47547003995745","9.47547003995745","1","neutral"
+"149","lets ask the other exo l accounts from other countries most in asia right now are gonna sle","unknown","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"150","dance all night
+ 
+ sleep all day","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"151","how sleep deprivation changes your eating habits havingtime","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"152","dear my neighbor the front house shut the hell up i m sleepy i wanna sleep","unknown","9.47547003995745","9.47547003995745","1","neutral"
+"153","me sleepy lemme sleep okay bye","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"154","not to be a bother but please get sleep you need it to go on with life","anger","9.47547003995745","26.8423564950873","0.353004403383572","negative"
+"155","i can t sleep but im tired","disgust","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"156","h m of sleep logged last night and awoke april via fitbit","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"157","need sleep","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"158","can t sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"159","fuck my fucked up sleep schedule","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"160","fellow japan tweeters 
+if you had h to spend anywhere in gunma what where would you visit eat sleep in that is not an o","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"161","but now they ve left and i ve been working all morning because i finally got to sleep in but now i only have like a","joy","9.47547003995745","9.47547003995745","1","neutral"
+"162","i just wanna sleep now","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"163","fellow japan tweeters 
+if you had h to spend anywhere in gunma what where would you visit eat sleep in that is not an onsen","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"164","i usually be going to sleep high today the first day in like","anger","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"165","hay fever has gone and so it s cured for insufficient sleep","unknown","1.03127774142571","17.1191924966825","0.0602410272345239","negative"
+"166","new pastor is young and nice i liked the old pastor better tho new pastor has nice voice not let me into sleep","unknown","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"167","","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"168","yesterday at the live me and were laughing at the difference in kaname and yuu fans 
+kaname fans squealing","joy","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"169","dazai pointed behind him indicating that he was fine with kunikida staying and sleeping in his bed","anger","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"170","kunikida was about to protest but instantly calmed the moment dazai has his fingers on his head","unknown","9.47547003995745","9.47547003995745","1","neutral"
+"171","he drank the rest of the whiskey then put the cup down 
+
+ it s your decision of you want me to sta","fear","9.47547003995745","9.47547003995745","1","neutral"
+"172","sis finally getting some sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"173","i can t believe my mom let me fall asleep at pm now it s am and i can t sleep","unknown","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"174","mp albums
+new releases in folk
+ too hot to sleep
+sam reider","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"175","it s crazy what hours of sleep will do to your energy level ahhhhh wide awakeeeeeee let s go","unknown","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"176","survived pax time to sleep for years","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"177","sleep cycle","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"178","home tired and exhausted kids are all in schools and this chic is ready to have her hrs sleep today inspite of","disgust","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"179","do you ever sleep boy","unknown","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"180","am i 
+
+he smiled and started carrying him towards the bed as in the message he mentioned he can","anger","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"181","oh i saw that s why i only got hours of sleep xd","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"182","kunikida squeaked a little and decided to hold up his partner in a bridal style instead 
+
+ i did","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"183","my sleep analysis on 
+via","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"184","sleep less","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"185","bes anuna sleep","surprise","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"186","the only way to do great work is to love what u do 
+
+i haven t sleep well days in a row but here i am ready to","joy","50.3101371714963","9.47547003995745","5.30951361350325","positive"
+"187","i can t sleep because i took a nap","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"188","good night sleep well so long farewell 
+this is only goodbye","joy","16.5333679773693","9.47547003995745","1.74485992859976","neutral"
+"189","takamaki san good morning did you sleep well 
+
+stop","joy","16.5333679773693","0.445453222112551","37.1158342933523","positive"
+"190","john de sohn go to sleep lyric","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"191","if i get another emergency call it s almost am go to sleep people","sadness","1.03127774142571","18.5054868578024","0.0557282145209216","negative"
+"192","he would sleep till in the afternoon a healthy sleep schedule was not something the man ever had","unknown","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"193","it is time for me to sleep but why am i playing dota","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"194","oh yeah how about waking up early and getting enough sleep that s a fine goal damn brain way to shut me down lol","unknown","8.78232285939751","18.5054868578024","0.474579400524914","negative"
+"195","i want my sleep time","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"196","my student at this morning came from kujukuri in chiba this morning to ochanomizu in tokyo for a lesson after","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"197","if i wake up this early and all i got is arrowhead im putting my ass back to sleep","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"198","was exposed to a beautiful movie by his beloved boyfriend 
+what event to end the night a lucky one indeed 
+
+ love you","joy","42.5590920535245","8.78232285939751","4.84599493037132","positive"
+"199","i just want to sleep a lot and ignore the world and all the bad things that s making me sad every passing second ️","sadness","26.3638546370209","26.8423564950873","0.982173627037777","negative"
+"200","was exposed to a beautiful movie by his beloved boyfriend 
+what event to end the night a lucky one indeed 
+
+ lov","unknown","34.1148997549927","8.78232285939751","3.88449619777849","positive"
+"201","stove natural sound","unknown","16.5333679773693","0.445453222112551","37.1158342933523","positive"
+"202","i ve had vivid and intense dreams basically every night since november with last night s being particularly fucked","unknown","17.2265151579293","9.47547003995745","1.81801167491282","neutral"
+"203","good morning christine and cece☕️ i just stayed home and relaxed and i will go to sleep early today","joy","33.4217525744328","0.445453222112551","75.0286470393703","positive"
+"204","hours with no sleep amp tomorrow is the first day of school blame the screaming baby in yesterday s overnight fli","joy","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"205","but it isn t even just about sleep lying around in my underwear talking to no one relaxing it s just so important","unknown","24.9775602759011","9.47547003995745","2.63602334982563","positive"
+"206","well good morning to you too did you at least sleep well 
+
+the strange man asks as he watched the red headed female","joy","16.5333679773693","17.8123396772424","0.928197433742679","negative"
+"207","work has been busy and full of overtime lately so i really needed this full day of sleep","unknown","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"208","ed you once recommended using melatonin to me for great sleep cbd oil is even better than that from your one off experience","joy","41.8659448729645","0.445453222112551","93.9850534123793","positive"
+"209","i did it i figured out the training room post stats and how to calculate it time to sleep but this is a vid that took me hal","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"210","got me a nice ass bordeaux shirt but im still mad cuz just gotta get home and sleep","anger","17.9196623384892","18.5054868578024","0.968343198759661","negative"
+"211","when you wake up in hell you ll never sleep again","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"212","tue in jpn","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"213","going to bed to sleep because sleeping would be nice and notnfreling exhausted is something that needs to happen more","anger","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"214","good afternoon my name is sakata gintoki i want to apply for captain my hobby is eating sweets my skills includ","joy","17.2265151579293","0.445453222112551","38.6718836070664","positive"
+"215","wow what a pathetic passive aggressive note lol how the hell was anyone supposed to know he was just y","anger","34.8080469355527","44.2092429502172","0.787347726690301","negative"
+"216","so i actually went to sleep before and woke up at on a sunday am i an adult yet","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"217","２ go sleep ️ ️ ︎
+ 横浜denaベイスターズ","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"218","i just want to sleep","unknown","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"219","can t sleep all i can think of is how flawless and amazing it was to experience live here in nola","joy","41.8659448729645","0.445453222112551","93.9850534123793","positive"
+"220","she goes to sleep in the run then can unleash these withering bursts an exciting filly thought luck","joy","17.9196623384892","9.47547003995745","1.89116342122587","neutral"
+"221","thank you hayden i remember vaguely seeing this before i fell into deep sleep it actually helped you da best lt","unknown","17.9196623384892","17.8123396772424","1.00602518608961","neutral"
+"222","wakes up at am i ll just sleep a few more hours 
+
+wakes up at pm dammit","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"223","do you get it i said he ought to sleep on the idea because","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"224","i m not tired but perhaps akechi ought to sleep on the idea 
+
+badum tsh","disgust","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"225","i should sleep but i just want to talk about my d amp d character now","unknown","17.9196623384892","0.445453222112551","40.2279329207804","positive"
+"226","do these people sleep they re nearly the same rank as my jp bandori account lol","unknown","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"227","this hangover better let me sleep ok the plans tho","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"228","im tryna sleep but jikook is breathing right now","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"229","hi unnies pls help retweet and share this tag so we can keep it in top asian u","surprise","16.5333679773693","0.445453222112551","37.1158342933523","positive"
+"230","have we ever seen him yawn before cute 
+
+also he says a proverb which means that in spring you sleep more deeply liter","unknown","25.670707456461","9.47547003995745","2.70917509613869","positive"
+"231","yeah a shame 
+
+dazai kept his soft smile plastered to his face he shook his head feeling his eyes st","sadness","9.47547003995745","9.47547003995745","1","neutral"
+"232","sleep is wonderful d 
+
+even johnny s need to lure me with something good enough to get me out of bed ω","surprise","24.9775602759011","26.8423564950873","0.930527849910363","negative"
+"233","have we ever seen him yawn before cute 
+
+also he says a proverb which means that in spring you sleep more deep","unknown","17.9196623384892","17.8123396772424","1.00602518608961","neutral"
+"234","text to 
+ gt kunikida kunnn
+ gt i cant sleep 
+ gt come ovrr here
+ gt ive hsd too mucb to drank 
+ gt i cant slerp 
+ gt slerp
+ gt sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"235","text to 
+ gt hey chuuya
+ gt its pretty late but i can t sleep 
+ gt hey are you there 
+ gt do i really dese","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"236","i had three monster energy yesterday but i was able to sleep well","unknown","16.5333679773693","9.47547003995745","1.74485992859976","neutral"
+"237","we did itttttt the hour stream is over and it was a huge success thanks to my amazing community and all my amazing","surprise","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"238","got lots of sleep at last someone was tired weekend","disgust","1.03127774142571","18.5054868578024","0.0557282145209216","negative"
+"239","we did itttttt the hour stream is over and it was a huge success thanks to my amazing community and all my am","surprise","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"240","how do you sleep at night","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"241","april 
+ooxoo fell asleep 
+time sleep onset latency h m s","unknown","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"242","hi unnies pls help retweet and share this tag so we can keep it in top","surprise","16.5333679773693","0.445453222112551","37.1158342933523","positive"
+"243","lets ask the other exo l accounts from other countries most in asia right now are go","unknown","8.78232285939751","9.47547003995745","0.926848253686942","negative"
+"244","a m just woke up for the game don t let me down i m too sleep deprived to deal","unknown","17.2265151579293","17.8123396772424","0.967111309916146","negative"
+"245","im going back to sleep","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"246","i m ready to fucking sleep wtf it s am i ain t down","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"247","what happened when it s past am and still can t sleep drawing otp s respective representative flowers ofc
+
+diphyl","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"248","it s am here in my country so bye uwu i need to sleep i love jikook","joy","9.47547003995745","8.78232285939751","1.07892526745566","neutral"
+"249","why not sleep jihyo dear","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"250","slept all day saturday from am to to pm wow catched up from sleep this weekend now i m wide awa","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"251","sleep tight love","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"252","i did it i figured out the training room post stats and how to calculate it time to sleep but this is a vid that","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"253","we just wanna sleep","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"254","when you wake up still drunk i need to be sleep","unknown","1.03127774142571","17.8123396772424","0.0578968153601572","negative"
+"255","ah looks like twitter is coming alive again time to go to sleep and wake up to a million tweets about pax this ti","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"256","back to the real world 
+sleep wake up eat then repeat","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"257","i got sick again so now everything hurts and i can t sleep and i have to get up early tomorrow and i just can t sto","disgust","9.47547003995745","17.8123396772424","0.531961000724885","negative"
+"258","hhhhhh it hurts so much maybe i should just sleep again wwww","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"259","tomorrow gonna be great lemme sleep though","joy","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"260","sky hi salu sleep walking official music video","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"261","it s my best but it s not good enough i got really good feedback from a concept artist working there and i m great","joy","25.670707456461","0.445453222112551","57.6282899800754","positive"
+"262","i had such a weirdly realistic dream last night i knew i was sleeping but i kept thinking it was something that h","unknown","17.2265151579293","18.5054868578024","0.930886892644283","negative"
+"263","the latest the masaaki sueyoshi daily","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"264","lid sleep was returned to normal due to the cpu exceeding safe limits","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"265","why am i laying here starting at twitter at am i need a bed time story or a massage maybe both there s an","anger","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"266","we should separate sounds for sleep and ambient sounds","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"267","the huntsman flexing in his sleep do you make gains in your dreams","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"268","i m too excited about bugs to sleep","unknown","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"269","relax
+
+ 
+ 柴 柴犬 犬 
+ 昼寝","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"270","this sleep is about to be fantastic","surprise","9.47547003995745","0.445453222112551","21.2715265477714","positive"
+"271","i don t really care enough to try anymore i ll just sleep","joy","17.2265151579293","8.78232285939751","1.96149873259283","neutral"
+"272","transparent bubble domes in ireland offer guests a chance to sleep under the starry sky designboom","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"273","drifts to sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"274","for i i lt i i do head i parrot sleep done
+ シェル芸 q","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"275","she ran in and jumped on his bed 
+
+ i ll sleep in here tonight","anger","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"276","he s a sweet boi i secretly let him sleep on my bed with me","anger","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"277","look at this thread rihanna is probably fucking terrified and doesn t wanna get cut open in her sleep","fear","17.2265151579293","17.8123396772424","0.967111309916146","negative"
+"278","people are nailed to the processes 
+up 
+down 
+do something 
+get up do something go to sleep 
+get up 
+they c","sadness","1.03127774142571","9.47547003995745","0.108836578774127","negative"
+"279","my teacher told the class tomorrow was pajama day she said we have to come to school with what we wear when we sle","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"280","mp albums
+new releases in children s music
+ sleep tight 
+caspar babypants","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"281","you can go out to dinner 
+your kids can play with mine 
+i ll get them to sleep 
+ hour 
+it s cheap if you think","sadness","9.47547003995745","18.5054868578024","0.512035706640291","negative"
+"282","the map is trillion times the size of new york in real life i sleep
+
+ well you know our map isn t that big but we tr","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"283","why you gotta sleep on my crewwwwwwwwwww","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"284","idk y can t i sleep y y y y y it s almost am mygad myself y","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"285","morning ready to get weird 
+
+lol jk going back to sleep","sadness","16.5333679773693","18.5054868578024","0.893430586528906","negative"
+"286","it s five am go back to sleep","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"287","sleep well ️please","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"288","but she felt them if she felt them at all as faint silver flares somewhere out on the edge of sleep","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"289","i could go shopping but i need sleep","unknown","1.03127774142571","8.78232285939751","0.117426534862834","negative"
+"290","trans 
+synchronization game 
+q what do u do right after you wake up 
+jh i go to the toilet
+jm i use my eye droplet b","unknown","8.78232285939751","8.78232285939751","1","neutral"
+"291","aww i get you magnus is a few pennies short of a pound but but still smarter i can t sleep comfor","sadness","9.47547003995745","9.47547003995745","1","neutral"
+"292","the map is trillion times the size of new york in real life i sleep
+
+ well you know our map isn t that big b","unknown","24.9775602759011","0.445453222112551","56.0722406663613","positive"
+"293","go to sleep by bearson","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"294","i tried not to imagine her in the house of blue lights working three hour shifts in an approximation of rem sleep","sadness","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"295","i cant sleep","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"296","fancam junho winter sleep concert frozen heart budokan","joy","8.78232285939751","8.78232285939751","1","neutral"
+"297","fancam junho winter sleep concert canvas","unknown","1.03127774142571","0.445453222112551","2.31512017476245","positive"
+"298","i should really sleep or do something more productive","unknown","8.78232285939751","0.445453222112551","19.7154772340574","positive"
+"299","i have to sleep
+good night","joy","8.78232285939751","0.445453222112551","19.7154772340574","positive"
