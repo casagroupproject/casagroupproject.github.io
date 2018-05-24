@@ -362,8 +362,8 @@ push();
 
           freq = map(table.getString(r1, 1), 0, width, 20, 10000);
           //osc.freq(freq/2);
-          //osc.freq(random(255));
-          osc.freq(anger_count);
+          osc.freq(random(255));
+          //osc.freq(anger_count);
           //print(count2);
 
 
