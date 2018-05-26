@@ -43,7 +43,7 @@ function preload() {
   //img = loadImage("http://0.0.0.0:8000/circadian/Star_Const.png");
   //img2 = loadImage("http://0.0.0.0:8000/circadian/mute.png");
   img = loadImage("circadian/Star_Const.png");
-  img = loadImage("circadian/mute.png");
+  img2 = loadImage("circadian/mute.png");
 }
 
 
