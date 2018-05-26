@@ -32,8 +32,8 @@ function preload() {
   
   //Local and Local HTTP Server Versions Required for TE=esting. 
   //You also need to Disable Cross Origin REstriction in DEveloper Console on Browser during Local Tesing
-  //table = loadTable('http://0.0.0.0:8000/circadian/circadian_tokyo.csv', 'csv', 'header');
-  table = loadTable('circadian/circadian_tokyo.csv', 'csv', 'header');
+  //table = loadTable('http://0.0.0.0:8000/circadian/circadian_stockholm.csv', 'csv', 'header');
+  table = loadTable('circadian/circadian_stockholm.csv', 'csv', 'header');
 
   //font_bold = loadFont('http://0.0.0.0:8000/circadian/Inconsolata-Bold.ttf')
   //font = loadFont('http://0.0.0.0:8000/circadian/Inconsolata-Bold.ttf')
@@ -139,7 +139,7 @@ function draw() {
     fill(255, 255, 255);
     text('TIME: ' + table.getString(r1, 0), width*.55, height*.8, 360, 200);
     textFont(font, 20);
-    text('PLACE: Tokyo', width*.55, height*.85, 360, 200);
+    text('PLACE: Stockholm', width*.55, height*.85, 360, 200);
     text('DATE: 11/04/2018', width*.55, height*.90, 360, 200);
     text('SUBJECT: Male', width*.7, height*.015, 320, 200);
     textFont(font, 14);
