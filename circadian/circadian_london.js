@@ -57,6 +57,10 @@ function setup() {
   //NEeds to be responsive. More Width and Height Variables, less hardcoded Numbers
   createCanvas(windowWidth, windowHeight);
 
+  //back button for website navigation
+  button = createButton('Back Button');
+  button.position(width/2.4, height/1.1);
+  button.mousePressed(changeBG);
 
   //Spacer for INTro To Prog Step Sequencer Array. 5 Off Buttons for The Twitter Mood Audio Processer.
   spacing = width*0.05;
@@ -334,10 +338,6 @@ function draw() {
 
       theta += 0.01;
 
-
-
-
-
       //AUDIO LIBRARY TOOLS   
 
         push();
@@ -460,6 +460,11 @@ function draw() {
         strokeWeight(1); 
         fill(255);
         text("Sound On/Off",width*0.21,height*0.65);
+
+
+    
+
+
       pop();
 
 
@@ -537,13 +542,17 @@ if (mouseIsPressed)
 {
     var eye = int(mouseX/spacing);
     if(eye>-1 && eye<selected.length) selected[eye]=!selected[eye];
-    //print(eye);
-    print(selected[eye]);
-}
-
+   
+    //open("https://casagroupproject.github.io/cities.html");
 
 }
 
+
+}
+
+function changeBG() {
+    open("https://casagroupproject.github.io/cities.html");
+}
 
 //Testing Wave Function
 //function f(r, i){
