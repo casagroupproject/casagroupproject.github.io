@@ -63,8 +63,8 @@ text(j,5*g,(340-(j*z+20))*g);}
 //y
 text("NUM",5*g,(340-(225*z+20)-10)*g);
  stroke(#9370DB);
-for( stroke(255,0,0);
-int a=1;a<24;a++){line((20+(a-1)*20+10)*g,(340-(numn[a-1]*z+20)-10)*g,(20+(a)*20+10)*g,(340-(numn[a]*z+20)-10)*g);}
+ stroke(255,0,0);
+for(int a=1;a<24;a++){line((20+(a-1)*20+10)*g,(340-(numn[a-1]*z+20)-10)*g,(20+(a)*20+10)*g,(340-(numn[a]*z+20)-10)*g);}
  stroke(#9370DB);
 for(int b=1;b<24;b++){line((20+(b-1)*20+10)*g,(340-(numt[b-1]*z+20)-10)*g,(20+(b)*20+10)*g,(340-(numt[b]*z+20)-10)*g);}
 
@@ -74,13 +74,15 @@ for(int e=1;e<24;e++){line((20+(e-1)*20+10)*g,(340-(numd[e-1]*z+20)-10)*g,(20+(e
 for(int f=1;f<24;f++){line((20+(f-1)*20+10)*g,(340-(numl[f-1]*z+20)-10)*g,(20+(f)*20+10)*g,(340-(numl[f]*z+20)-10)*g);}
 
 fill(255);
+
 textSize(8);
 text("Tokyo",580*g-85,304*g);
-text("London",580*g-85,150*g);
+text("London",580*g-85,200*g);
 text("Delhi",580*g-85,293*g);
-text("New York",580*g-85,200*g);
+text("New York",580*g-85,150*g);
 text("Stockholm",580*g-85,309*g);
-text("Sydney",580*g-85,299*g);}
+text("Sydney",580*g-85,299*g);
+}
 if(k==1060&i==1060){k=0;i=0;setup();draw();}
 
 

@@ -74,9 +74,9 @@ for(int f=1;f<24;f++){line((20+(f-1)*20+10)*g,(340-(numl[f-1]*z+20)-10)*g,(20+(f
 fill(255);
 textSize(8);
 text("Tokyo",580*g-85,304*g);
-text("London",580*g-85,150*g);
+text("London",580*g-85,200*g);
 text("Delhi",580*g-85,293*g);
-text("New York",580*g-85,200*g);
+text("New York",580*g-85,150*g);
 text("Stockholm",580*g-85,309*g);
 text("Sydney",580*g-85,299*g);
 }
