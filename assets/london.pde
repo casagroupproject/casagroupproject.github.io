@@ -108,8 +108,8 @@ if(k>=dt&k<=23){
 }
 
 if(k==23){k=0;}
-stroke(#808080);
-strokeWeight(0.5);
+stroke(#696969);
+strokeWeight(0.1);
 line(30*g,10*g,30*g,310*g);//yline
 line(30*g,310*g,520*g,310*g);//xline
 if(i<=23&i>=0){line(30+(dt*20)*g,10*g,30+(dt*20)*g,310*g);
