@@ -1,9 +1,9 @@
 # casagroupproject.github.io
 <h1> Night on Earth </h1>
 <br>
-<h2> This is a project by Shu, Anthony, Pei and Melanie created for the Digital Visualisation course at the Centre for Advanced Spatial Analysis, UCL London. <h2>  
+<h2> This is a project by Shu, Anthony, Pei and Melanie created for the Digital Visualisation course at the Centre for Advanced Spatial Analysis, UCL London. </h2>  
 
-Folder structure:<br>
+<b> Folder structure: </b><br>
 assets: 3D files and .pde files <br>
 circadian: all source files including data for the Circadian clock<br>
 css: all css styles<br>
@@ -11,7 +11,7 @@ js: all .js files <br>
 processing: all processed data, not included in webapge 
 
 
-HTML File structure in root directory:<br>
+<b>HTML File structure in root directory:</b><br>
 index0.html: Preloading page <br>
 index.html: Globe <br>
 cities.html: subpage 1 (light landscapes and Twitter counts)<br>
