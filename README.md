@@ -11,10 +11,10 @@
 
 
 <b>HTML File structure in root directory:</b><br>
-index0.html: Preloading page <br>
-index.html: Globe <br>
-cities.html: subpage 1 (light landscapes and Twitter counts)<br>
-tokyo.html, london.html, stockholm.html, sydney.html, delhi.html, newyork.hmtl: subpages 2 (circadian clock)<br>
+>*index0.html:* Preloading page <br>
+>*index.html:* Globe <br>
+>*cities.html:* subpage 1 (light landscapes and Twitter counts)<br>
+>*tokyo.html, london.html, stockholm.html, sydney.html, delhi.html, newyork.hmtl:* subpages 2 (circadian clock)<br>
 
 
-##the website is available under: http://casagroupproject.github.io
+## the website is available under: http://casagroupproject.github.io
