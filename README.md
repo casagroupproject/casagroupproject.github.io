@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # casagroupproject.github.io
 <h1>Night on Earth<h1>
 
@@ -8,9 +9,25 @@ Two tempates sub-pages are below, you can also access them in the city link of l
 
 https://casagroupproject.github.io/template1/index1.html </br>
 https://casagroupproject.github.io/template2/index2.html
+=======
+<h1> Night on Earth </h1>
+<br>
+<h3> This is a project by Shu, Anthony, Pei and Melanie created for the Digital Visualisation course at the Centre for Advanced Spatial Analysis, UCL London. </h3>  
 
-In terms of font, that's the font we are using: </br>
-https://fonts.google.com/specimen/Inconsolata
+<b> Folder structure: </b><br>
+>*assets*: 3D files and .pde files <br>
+>*circadian*: All source files including data for the Circadian clock<br>
+>*css*: All css styles<br>
+>*js:* All javaScript files <br>
+>*preprocessing:* All processed data, not included in webpage 
 
-You can put your css stuff under the css folder and javascript under the js folder </br>
-Please do not change the content in 'build','include' and 'src' folder 
+>>>>>>> 53e7516b0767c2a1f90e673f2953fbc0fba1f505
+
+<b>HTML File structure in root directory:</b><br>
+>*index0.html:* Preloading page <br>
+>*index.html:* Globe <br>
+>*cities.html:* Subpage 1 (light landscapes and Twitter counts)<br>
+>*tokyo.html, london.html, stockholm.html, sydney.html, delhi.html, newyork.hmtl:* Subpages 2 (Circadian clock)<br>
+
+
+### the website is available under: http://casagroupproject.github.io

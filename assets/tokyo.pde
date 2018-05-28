@@ -110,8 +110,8 @@ if(k>=dt&k<=23){
 }
 
 if(k==23){k=0;}
-stroke(255);
-strokeWeight(3);
+stroke(#696969);
+strokeWeight(0.1);
 line(30*g,10*g,30*g,310*g);//yline
 line(30*g,310*g,520*g,310*g);//xline
 if(i<=23&i>=0){line(30+(dt*20)*g,10*g,30+(dt*20)*g,310*g);
@@ -119,7 +119,7 @@ line(30+(nt*20)*g,10*g,30+(nt*20)*g,310*g);}
 fill(  #9370DB);
 stroke(  #9370DB);
 k++;
-if(i>=1){
+if(i>=1){  strokeWeight(2);
 line((20+(i-1)*20+10)*g,(340-(num[i-1]*y+20)-10)*g,(20+(i)*20+10)*g,(340-(num[i]*y+20)-10)*g);//graph line
 }
 

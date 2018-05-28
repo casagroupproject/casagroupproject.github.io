@@ -17,10 +17,12 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: black;
 }
 
 body {
   margin: 0;
+  background-color:black;
 }
 
 article,
@@ -1404,7 +1406,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: white;
   background-color: #fff;
 }
 
