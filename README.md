@@ -14,8 +14,8 @@
 >*preprocessing:* All processed data, not included in webpage 
 
 <b>HTML File structure in root directory:</b><br>
->*index0.html:* Preloading page <br>
->*index.html:* Globe <br>
+>*index0.html:* Globe <br>
+>*index.html:* Preloading page<br>
 >*cities.html:* Subpage 1 (light landscapes and Twitter counts)<br>
 >*tokyo.html, london.html, stockholm.html, sydney.html, delhi.html, newyork.hmtl:* Subpages 2 (Circadian clock)<br>
 
