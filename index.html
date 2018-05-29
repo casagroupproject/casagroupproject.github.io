@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+      <script src='js/jquery.min.js'></script>
+      <script src='js/three.min.js'></script>
+        <title>NightOnEarth</title>
+        <style>
+ body{      
+    margin: 0px ; 
+ }
+  #info-box-two{
+    position:absolute;
+    bottom: 250px;
+    z-index:10;
+    margin-left: auto;
+    margin-right: auto;
+   font-family: 'Inconsolata',sans-serif;
+  /*font-family: 'Waiting for the Sunrise', cursive; */
+     /*font-family:'Open Sans Condensed',sans-serif;*/
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.8;
+  font-size:25px; 
+  color: white;
+  /*center?*/
+  left: 15%;
+  /*margin: 10px 50px; */
+  letter-spacing: 6px; 
+  /*font-weight: bold;*/
+}
+#start-icon{
+    font-family: 'Waiting for the Sunrise', cursive; 
+    position:absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index:10;
+    margin-left: auto;
+    margin-right: auto;
+    /*color: white;*/
+}
+.bulb :hover {
+    color: red;
+    background-color: transparent;
+cursor:pointer;
+        </style>
+    
+</head>
+  <body>
+    <div id='info-box-two'>
+           <div id="typedtext"></div>
+        </div>
+         <a id='start-icon'  href="index0.html"><div style="font-size:2.5em; color:#f6f062">
+  <i class="far fa-lightbulb" id='bulb'></i>
+</div>
+</a>
+        </body>
+<script>
+// create the star system
+var Stats = function () {
+    var startTime = Date.now(), prevTime = startTime;
+    var ms = 0, msMin = Infinity, msMax = 0;
+    var fps = 0, fpsMin = Infinity, fpsMax = 0;
+    var frames = 0, mode = 0;
+    var container = document.createElement( 'div' );
+    container.id = 'stats';
+    container.addEventListener( 'mousedown', function ( event ) { event.preventDefault(); setMode( ++ mode % 2 ) }, false );
+    var fpsGraph = document.createElement( 'div' );
+    fpsGraph.id = 'fpsGraph';
+    fpsGraph.style.cssText = 'position:relative;width:74px;height:30px;background-color:#0ffffff';
+    while ( fpsGraph.children.length < 74 ) {
+        var bar = document.createElement( 'span' );
+        bar.style.cssText = 'width:1px;height:30px;float:left;background-color:#113';
+        fpsGraph.appendChild( bar );
+    }
+    var msDiv = document.createElement( 'div' );
+    msDiv.id = 'ms';
+    msDiv.style.cssText = 'padding:0 0 0px 0px;text-align:left;background-color:#020;display:none';
+    container.appendChild( msDiv );
+    var msText = document.createElement( 'div' );
+    msText.id = 'msText';
+    msText.style.cssText = 'color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px';
+    msText.innerHTML = 'MS';
+    msDiv.appendChild( msText );
+    var msGraph = document.createElement( 'div' );
+    msGraph.id = 'msGraph';
+    msGraph.style.cssText = 'position:relative;width:74px;height:30px;background-color:#0f0';
+    msDiv.appendChild( msGraph );
+    while ( msGraph.children.length < 74 ) {
+        var bar = document.createElement( 'span' );
+        bar.style.cssText = 'width:1px;height:30px;float:left;background-color:#131';
+        msGraph.appendChild( bar );
+    }
+    var setMode = function ( value ) {
+        mode = value;
+        switch ( mode ) {
+            case 0:
+                fpsDiv.style.display = 'block';
+                msDiv.style.display = 'none';
+                break;
+            case 1:
+                fpsDiv.style.display = 'none';
+                msDiv.style.display = 'block';
+                break;
+        }
+    }
+    return {
+        domElement: container,
+        setMode: setMode,
+        begin: function () {
+            startTime = Date.now();
+        },
+        end: function () {
+            var time = Date.now();
+            frames ++;
+            if ( time > prevTime + 1000 ) {
+                fps = Math.round( ( frames * 1000 ) / ( time - prevTime ) );
+                fpsMin = Math.min( fpsMin, fps );
+                fpsMax = Math.max( fpsMax, fps );
+                prevTime = time;
+                frames = 0;
+            }
+            return time;
+        },
+        update: function () {
+            startTime = this.end();
+        }
+    }
+};
+//typeWriter effect
+// adding our intro text
+var aText = new Array(
+    "Imaging Pulse as the rhythmical interaction of light,", 
+    "darkness and social network activity by exploring",
+    "the effect of natural and anthropogenic light sources",
+    "on sleep quality and well-being..."
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter(){
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+typewriter();
+(function() {
+    'use strict';
+   
+    var scene, camera, renderer;
+    var container, aspectRatio,
+        HEIGHT, WIDTH, fieldOfView,
+        nearPlane, farPlane,
+        mouseX, mouseY, windowHalfX,
+        windowHalfY, stats, geometry,
+        starStuff, materialOptions, stars;
+    init();
+    animate();
+    function init() {
+        container = document.createElement('div');
+        document.body.appendChild( container );
+        document.body.style.overflow = 'hidden';
+        HEIGHT = window.innerHeight;
+        WIDTH = window.innerWidth;
+        aspectRatio = WIDTH / HEIGHT;
+        fieldOfView = 75;
+        nearPlane = 1;
+        farPlane = 1000;
+        mouseX = 0;
+        mouseY = 0;
+        windowHalfX = WIDTH / 2;
+        windowHalfY = HEIGHT / 2;
+    /*  fieldOfView notes:
+     — Camera frustum vertical field of view.
+            aspectRatio — Camera frustum aspect ratio.
+            nearPlane — Camera frustum near plane.
+            farPlane — Camera frustum far plane.    
+            In geometry, a frustum (plural: frusta or frustums) 
+            is the portion of a solid (normally a cone or pyramid) 
+            that lies between two parallel planes cutting it. - wikipedia. */
+        camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
+        //Z positioning of camera
+        camera.position.z = farPlane / 2;
+        
+        scene = new THREE.Scene({antialias:true});
+        scene.fog = new THREE.FogExp2( 0x000000, 0.0003 );
+        // The wizard's about to get busy.
+        starForge();
+        
+        //check for browser Support
+        if (webGLSupport()) {
+            renderer = new THREE.WebGLRenderer({alpha: true});
+        } else {
+            renderer = new THREE.CanvasRenderer();
+        }
+        renderer.setClearColor(0x000000, 1);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize( WIDTH, HEIGHT);
+        container.appendChild(renderer.domElement);
+        stats = new Stats();
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.top = '0px';
+        stats.domElement.style.right = '0px';
+        container.appendChild( stats.domElement );
+        window.addEventListener( 'resize', onWindowResize, false );
+        document.addEventListener( 'mousemove', onMouseMove, false );
+        
+    }
+    function animate() {
+        requestAnimationFrame(animate);
+        render();
+        stats.update();
+    }
+    function render() {
+        camera.position.x += ( mouseX - camera.position.x ) * 0.005;
+        camera.position.y += ( - mouseY - camera.position.y ) * 0.005;
+        camera.lookAt( scene.position );
+        renderer.render(scene, camera);
+    }
+    function webGLSupport() {
+        try {
+            var canvas = document.createElement('canvas');
+            return !!(window.WebGLRenderingContext && (
+                canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
+            );
+        } catch(e) {
+            // console.warn('OPPPPPS, for some reason we\'re not able to use webGL for this.  No biggie, we\'ll use canvas.');
+            return false;
+        }
+    }
+    function onWindowResize() {
+        // Resize everything when needed 
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+        camera.aspect = aspectRatio;
+        camera.updateProjectionMatrix();
+        renderer.setSize(WIDTH, HEIGHT);
+    }
+// create the star system now
+    function starForge() {
+    
+        var starQty = 45000;
+            geometry = new THREE.SphereGeometry(1000, 100, 50);
+            materialOptions = {
+                size: 1.0, 
+                transparency: true, 
+                opacity: 0.3
+            };
+            starStuff = new THREE.PointCloudMaterial(materialOptions);
+        for (var i = 0; i < starQty; i++) {     
+            var starVertex = new THREE.Vector3();
+            starVertex.x = Math.random() * 2000 - 1000;
+            starVertex.y = Math.random() * 2000 - 1000;
+            starVertex.z = Math.random() * 2000 - 1000;
+            geometry.vertices.push(starVertex);
+        }
+        stars = new THREE.PointCloud(geometry, starStuff);
+        scene.add(stars);
+    }
+    function onMouseMove(e) {
+        mouseX = e.clientX - windowHalfX;
+        mouseY = e.clientY - windowHalfY;
+    }   
+})();
+        </script>
+      
